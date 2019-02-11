@@ -4,15 +4,14 @@ quizForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(quizForm);
 
-    const response = {
-        q1: formData.get('q1'),  
-        q2: formData.get('q2'),  
+    const answers = {
+        favorite: formData.get('favorite') 
     };
 
-    console.log(response);
+    console.log(answers);
     
-    const json = JSON.stringify(response);
-    window.localStorage.setItem('responses', json);
+    // const json = JSON.stringify(answers);
+    // window.localStorage.setItem('responses', json);
 
     //window.location = 'results.html';
 

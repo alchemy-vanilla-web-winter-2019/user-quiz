@@ -1,4 +1,4 @@
-
+import scoreFavorite from '../../src/calculate-results/favorite/score-favorite.js';
 const test = QUnit.test;
 
 QUnit.module('scoring the favorite');
@@ -13,3 +13,4 @@ test('Ocean is selected as favorite', function(assert){
     scoreFavorite('ocean', scorecard);
     assert.deepEqual(scorecard, { ocean: 1, sun: 0, grass: 0 });
 });
+
