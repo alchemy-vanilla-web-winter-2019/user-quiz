@@ -11,35 +11,23 @@
     <main>
         <form id="quiz-form"> 
             <fieldset>
-                <legend>Which JT are you?</legend>
+                <legend>Pick your favorite?</legend>
                 <label>
-                    <input type="radio" name="q1" value="ramen">Ramen    
+                    <input type="radio" name="favorite" id="sun" value="sun">Sun 
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="sexy-back">SexyBack
+                    <input type="radio" name="favorite" id="ocean" value="ocean">Ocean
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="denim">Denim Tuxedo
+                    <input type="radio" name="favorite" id="grass" value="grass">Grass
                 </label>
             </fieldset>
-            
-            <fieldset>
-                <legend>Favorite Album?</legend>
-                <label>
-                    <input type="radio" name="q2" value="man-of-the-woods">Man Of the woods    
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="future-sex">Future Sex
-                </label>
-                <!-- <label>
-                    <input type="radio" name="q2" value="denim">Denim Tuxedo
-                </label> -->
-            </fieldset>
+        
             
             <button id="quiz-submit">Submit</button>
         </form>
 
     </main>
-<script src="./src/quiz.js"></script>
+<script type="module" src="./src/quiz/quiz.js"></script>
 </body>
 </html>

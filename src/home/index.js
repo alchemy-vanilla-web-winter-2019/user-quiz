@@ -12,7 +12,7 @@ userInfo.addEventListener('submit', function(event) {
     const json = JSON.stringify(userProfile);
     window.localStorage.setItem('userProfile', json);
 
-    window.location = 'quiz.html';
+    window.location = '/quiz/quiz.html';
 
 });
 
