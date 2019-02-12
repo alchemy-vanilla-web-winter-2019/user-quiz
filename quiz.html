@@ -8,12 +8,32 @@
 </head>
 <body>
     <header>
-        <h1>Fill Out the Quiz</h1>
+        <h1 id="header">
+            Fill Out the Quiz then
+            <br>
+            <a id="usersname"></a> !
+        </h1>
     </header>
     <main>
         <section>
-            <form>
-                
+            <form id="quiz-form">
+                <fieldset>
+                    <legend>Favorite Food:</legend>
+                    <label>
+                        Pizza
+                        <input type="radio" name="food" value="Pizza">
+                    </label>
+                    <label>
+                        Cake
+                        <input type="radio" name="food" value="Cake">
+                    </label>
+                    <label>
+                        Salad
+                        <input type="radio" name="food" value="Salad">
+                    </label>
+                </fieldset>
+                <br>
+                <input type="submit" value="Woof Woof">
             </form>
         </section>
     </main>
