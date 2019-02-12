@@ -3,7 +3,7 @@ QUnit.module('flavors score');
 const test = QUnit.test;
 
 let scorecard = null;
-import scoreFlavorsQuestion from  '../../src/results-calculate/score-flavors.js';
+import scoreFlavorsQuestion from '../../src/results-calculate/score-flavors.js';
 QUnit.testStart(function() {
     scorecard = { iceCream: 0, brownie: 0, sorbet: 0, tiramisu: 0 };
 });
