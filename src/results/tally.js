@@ -5,7 +5,7 @@ function tally(scorecard) {
         return 'blue';
     } else if(scorecard.grass > scorecard.ocean && scorecard.grass > scorecard.sun) {
         return 'green';
-    }
+    } 
 }
 
 export default tally;
