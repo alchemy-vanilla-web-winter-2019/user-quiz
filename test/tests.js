@@ -1,0 +1,1 @@
+import './quiz/score-wealth.test.js';
