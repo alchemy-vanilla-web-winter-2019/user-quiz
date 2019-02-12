@@ -9,3 +9,4 @@ import './check-transportation.test.js';
 import './check-curse.test.js';
 import './check-dessert.test.js';
 import './check-relationship.test.js';
+import './check-lobster.test.js';
