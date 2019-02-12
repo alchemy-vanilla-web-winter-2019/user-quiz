@@ -16,3 +16,6 @@ document.addEventListener('submit', function(event) {
     console.log('choices', choices);
     
 });
+
+
+//I have the data. I now need to start my first test to evaluate time answer
