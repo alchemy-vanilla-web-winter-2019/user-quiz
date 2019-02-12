@@ -16,6 +16,10 @@ quizForm.addEventListener('submit', function(event) {
     };
 
     const quizResult = evaluateQuiz(answers);
+    
 
-    console.log(quizResult);
+    const quizResultString = JSON.stringify(quizResult);
+    window.localStorage.setItem('quizResult', quizResultString);
+
+    window.location = './result.html';
 });
