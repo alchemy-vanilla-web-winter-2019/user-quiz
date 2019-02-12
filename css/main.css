@@ -62,5 +62,6 @@ footer {
     display: flex;
     justify-content: center;
     padding: 25px;
+    margin-top: 25px; 
     background-color: #B5D99C;
 }
