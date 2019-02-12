@@ -18,4 +18,5 @@ fruitQuizNode.addEventListener('submit', function(event) {
 
     const answersJSON = JSON.stringify(answers);
     window.localStorage.setItem('answers', answersJSON);
+    window.location = '/pages/result.html';
 });
