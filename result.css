@@ -1,0 +1,18 @@
+img {
+    width: 200px;
+}
+
+h1 {
+    font-family: 'Rosarivo', serif;
+    font-size: 45px;
+    color: goldenrod;
+}
+
+body {
+    font-family: 'Linden Hill', serif;
+    font-size: 20px;
+}
+
+footer {
+    font-size: 12px
+}
