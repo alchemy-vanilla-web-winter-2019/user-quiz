@@ -11,9 +11,22 @@ QUnit.testStart(function() {
 });
 
 test('increment colors when MORNING is selected', function(assert) {
-    //arrange ... in the testStart method
-    //act
     timeScoreCrunch('morning', scorecard);
-    //assert
     assert.deepEqual(scorecard, { red: 0.5, blue: 0, purple: 0.5, black: 0, yellow: 1, green: 0.5 });
 }) ;
+
+test('increment colors when MIDDAY is selected', function(assert) {
+    timeScoreCrunch('mid-day', scorecard);
+    assert.deepEqual(scorecard, { red: 0, blue: 1, purple: 0, black: 0, yellow: 0.5, green: 1 });
+}) ;
+
+test('increment colors when EVENING is selected', function(assert) {
+    timeScoreCrunch('evening', scorecard);
+    assert.deepEqual(scorecard, { red: 0.5, blue: 0.5, purple: 0.5, black: 1, yellow: 0, green: 0 });
+}) ;
+
+test('increment colors when midnight is selected', function(assert) {
+    timeScoreCrunch('midnight', scorecard);
+    assert.deepEqual(scorecard, { red: 0, blue: 0.5, purple: 0.5, black: 1, yellow: 0.5, green: 0 });
+}) ;
+
