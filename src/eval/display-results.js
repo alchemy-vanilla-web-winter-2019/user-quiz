@@ -11,7 +11,6 @@ function displayResults(answers) {
     checkMovie(answers.movie, scorecard);
     const result = rateScorecard(scorecard);
     return result;
-
 }
 
 export default displayResults;

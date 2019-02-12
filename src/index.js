@@ -14,8 +14,7 @@ fruitQuizNode.addEventListener('submit', function(event) {
         animal: animal,
         movie: movie
     };
-    console.log(answers);
-
+    
     const answersJSON = JSON.stringify(answers);
     window.localStorage.setItem('answers', answersJSON);
     window.location = '/pages/result.html';
