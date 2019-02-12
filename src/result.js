@@ -1,4 +1,4 @@
-import calculateResult from "./calculate/calculate-result.js";
+import calculateResult from './calculate/calculate-result.js';
 
 const resultNode = document.getElementById('result');
 const jsonAnswer = window.localStorage.getItem('answers');
