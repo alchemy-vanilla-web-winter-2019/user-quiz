@@ -3,24 +3,7 @@ let scorecard = {};
 QUnit.testStart(function() {
     scorecard = { apple: 0, banana: 0, blueberry: 0, kiwi: 0 };
 });
-
-function checkLeisure(activity, scorecard) {
-    if(activity === 'running') {
-        scorecard.banana += 1;
-    }
-    if(activity === 'tv') {
-        scorecard.blueberry += 1;
-    }
-    if(activity === 'knitting') {
-        scorecard.apple += 1;
-    }
-    if(activity === 'partying') {
-        scorecard.kiwi += 1;
-    }
-
-    return scorecard;
-}
-
+import checkLeisure from '../src/eval/calculate/check-leisure.js';
 
 test('add 1 to banana if running is checked', function(assert) {
     const expected = { apple: 0, banana: 1, blueberry: 0, kiwi: 0 };
