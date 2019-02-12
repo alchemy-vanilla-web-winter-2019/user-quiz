@@ -1,8 +1,8 @@
+import getLocalStorage from './useful/get-local-storage.js';
+
+const scorecard = getLocalStorage('scorecard');
+
 const resultEl = document.getElementById('result');
-
-const scorecardJson = window.localStorage.getItem('scorecard');
-const scorecard = JSON.parse(scorecardJson);
-
 resultEl.textContent = tally(scorecard);
 
 function tally(scorecard) {
@@ -13,10 +13,9 @@ function tally(scorecard) {
     const support = scorecard.support;
     const tank = scorecard.tank;
 
-    const rolesArray = [assassin, fighter, mage, marksman, support, tank];
-    const highestScore = Math.max(...rolesArray);
-    const highestScoreIndex = rolesArray.indexOf(highestScore);
-    console.log(highestScoreIndex);
+    const roleValuesArr = [assassin, fighter, mage, marksman, support, tank];
+    const highestScore = Math.max(...roleValuesArr);
+    const highestScoreIndex = roleValuesArr.indexOf(highestScore);
 
     switch(highestScoreIndex) {
         case 0:

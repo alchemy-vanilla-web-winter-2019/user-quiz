@@ -1,13 +1,19 @@
+import getLocalStorage from './useful/get-local-storage.js';
+import storeLocalStorage from './useful/store-local-storage.js';
+
 import scoreRange from './scoring/score-range.js';
 import scoreType from './scoring/score-type.js';
 import scoreEngage from './scoring/score-engage.js';
 import scoreGrouping from './scoring/score-grouping.js';
 
-const profileJson = window.localStorage.profile;
-const profileObj = JSON.parse(profileJson);
+// Place name and avatar on top
+const profileObj = getLocalStorage('profile');
 const quizTakerEl = document.getElementById('quiz-taker');
 quizTakerEl.textContent = profileObj.name;
+const avatarImageEl = document.getElementById('avatar-image');
+avatarImageEl.src = './assets/' + profileObj.avatar + '-icon.png';
 
+// Submit form
 const quizFormEl = document.getElementById('quiz-form');
 quizFormEl.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -15,7 +21,7 @@ quizFormEl.addEventListener('submit', function(event) {
     const formData = new FormData(quizFormEl);
     const answersObj = makeAnswersObj(formData);
     const scorecard = makeScorecard(answersObj);
-    storeScorecard(scorecard);
+    storeLocalStorage('scorecard', scorecard);
 
     window.location = './results.html';
 });
@@ -30,6 +36,7 @@ function makeAnswersObj(formData) {
     return answersObj;
 }
 
+// Create scorecard and distribute answer weights
 function makeScorecard(answersObj) {
     const scorecard = {
         assassin: 0,
@@ -46,9 +53,4 @@ function makeScorecard(answersObj) {
     scoreGrouping(answersObj.grouping, scorecard);
 
     return scorecard;
-}
-
-function storeScorecard(scorecard) {
-    const scorecardJson = JSON.stringify(scorecard);
-    window.localStorage.setItem('scorecard', scorecardJson);
 }
