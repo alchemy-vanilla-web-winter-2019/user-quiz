@@ -1,5 +1,7 @@
 import resultCalculate from '../src/result-calculate.js';
 import scorePoison from '../src/poison-score.js';
+import scoreAccessory from '../src/accessory-score.js';
+import scoreColor from '../src/color-score.js';
 
 const userName = document.getElementById('name');
 const result = document.getElementById('result');
@@ -29,6 +31,9 @@ quizForm.addEventListener('submit', function(event){
     };
     
     scorePoison(answers.poison, scorecard);
+    scoreAccessory(answers.accessory, scorecard);
+    scoreColor(answers.color, scorecard);
+    console.log(scorecard);
     const finalResult = resultCalculate(scorecard);
 
     result.textContent = finalResult;
