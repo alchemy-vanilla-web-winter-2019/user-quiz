@@ -1,11 +1,12 @@
 const signIn = document.getElementById('sign-in');
 const userNameInput = document.getElementById('user-name');
 
-document.addEventListener('submit', function() {
-    userName = userNameInput.value;
+document.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const userName = userNameInput.value;
 
-    jsonUser = JSON.stringify(userName);
+    const jsonUser = JSON.stringify(userName);
     window.localStorage.setItem('userName', jsonUser);
 
-    //username is in local storage. Now I need to redirect to the quiz page
+    window.location = 'quiz.html';
 });
