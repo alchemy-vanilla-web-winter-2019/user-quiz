@@ -8,3 +8,4 @@ import './check-vacation.test.js';
 import './check-transportation.test.js';
 import './check-curse.test.js';
 import './check-dessert.test.js';
+import './check-relationship.test.js';
