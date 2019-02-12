@@ -1,6 +1,7 @@
-import foodScore from '../src/results/calculations/foodScore.js';
-import rateScorecard from '../src/results/calculations/rateScorecard.js';
-import colorScore from '../src/results/calculations/colorScore.js';
+import foodScore from '../src/results/calculations/food-score.js';
+import rateScorecard from '../src/results/calculations/rate-scorecard.js';
+import colorScore from '../src/results/calculations/color-score.js';
+import bandScore from '../src/results/calculations/band-score.js';
 
 const test = QUnit.test;
 
@@ -10,6 +11,7 @@ function calculateResult(answers) {
     const scorecard = { charmander: 0, bulbasaur: 0, squirtle: 0 };
     foodScore(answers.food, scorecard);
     colorScore(answers.color, scorecard);
+    bandScore(answers.band, scorecard);
     const testResult = rateScorecard(scorecard);
     return testResult;
 } 

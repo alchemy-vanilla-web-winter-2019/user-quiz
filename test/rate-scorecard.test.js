@@ -2,7 +2,7 @@
 const test = QUnit.test;
 
 QUnit.module('rate scorecard'); 
-import rateScorecard from '../src/results/calculations/rateScorecard.js';
+import rateScorecard from '../src/results/calculations/rate-scorecard.js';
 
 
 test('if charmander has a greater scorecard value than bulbasaur and squirtle, return "Charmander"', function(assert) {

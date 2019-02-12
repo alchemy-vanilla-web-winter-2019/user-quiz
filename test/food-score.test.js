@@ -1,5 +1,5 @@
 const test = QUnit.test;
-import foodScore from '../src/results/calculations/foodScore.js';
+import foodScore from '../src/results/calculations/food-score.js';
 
 let scorecard = null;
 QUnit.module('food score');

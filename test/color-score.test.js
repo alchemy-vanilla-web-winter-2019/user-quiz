@@ -1,6 +1,6 @@
 const test = QUnit.test;
 let scorecard = null;
-import colorScore from '../src/results/calculations/colorScore.js';
+import colorScore from '../src/results/calculations/color-score.js';
 
 QUnit.module('color score');
 QUnit.testStart(function() {
