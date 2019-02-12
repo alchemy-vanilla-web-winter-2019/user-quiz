@@ -1,4 +1,4 @@
-const signIn = document.getElementById('sign-in');
+// const signIn = document.getElementById('sign-in');
 const userNameInput = document.getElementById('user-name');
 
 document.addEventListener('submit', function(event) {
