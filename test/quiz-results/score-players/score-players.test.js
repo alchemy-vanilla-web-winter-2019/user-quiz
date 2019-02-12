@@ -1,4 +1,4 @@
-import scorePlayers from '../../src/score-players/score-players.js';
+import scorePlayers from '../../../src/quiz-results/score-players/score-players.js';
 
 const test = QUnit.test;
 

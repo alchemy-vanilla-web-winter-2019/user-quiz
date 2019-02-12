@@ -1,3 +1,5 @@
+import evaluateQuiz from '../quiz-results/evaluate-quiz/evaluate-quiz.js';
+
 const userProfile = JSON.parse(window.localStorage.getItem('userProfile'));
 
 const userNameDisplay = document.getElementById('user-name-display');
@@ -13,5 +15,7 @@ quizForm.addEventListener('submit', function(event) {
         players: quizFormData.get('players')
     };
 
-    console.log(answers);
+    const quizResult = evaluateQuiz(answers);
+
+    console.log(quizResult);
 });

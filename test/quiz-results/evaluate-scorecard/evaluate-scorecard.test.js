@@ -1,4 +1,4 @@
-import evaluateScorecard from '../../src/evaluate-scorecard/evaluate-scorecard.js';
+import evaluateScorecard from '../../../src/quiz-results/evaluate-scorecard/evaluate-scorecard.js';
 
 const test = QUnit.test;
 
