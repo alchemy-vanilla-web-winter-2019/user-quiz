@@ -27,6 +27,5 @@ test('test that increases scorecard.squirtle by one when sushi is inputted', fun
     const food = 'sushi';
     const results = foodScore(food, scorecard);
     const expected = { charmander: 0, bulbasaur: 0, squirtle: 1 };
-
     assert.deepEqual(results, expected);
 });

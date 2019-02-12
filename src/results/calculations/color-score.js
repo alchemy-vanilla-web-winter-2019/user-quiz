@@ -1,5 +1,4 @@
 function colorScore(color, scorecard) {
-    scorecard = { charmander: 0, bulbasaur: 0, squirtle: 0 };
     if(color === 'red') {
         scorecard.charmander += 1;
     }

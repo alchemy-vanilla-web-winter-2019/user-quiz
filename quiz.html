@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/quiz/quiz.css">
 </head>
 <header>
 <h1>Which Starter Pokemon Are You?</h1>
 </header>
 <body>
-    <form>
-        <fieldset>
+    <form id="poke-quiz">
+        <fieldset id="meal">
             <legend>What's your favorite meal?</legend>
             <label for="steak">Steak</label>
             <input 
@@ -35,7 +36,7 @@
                 value="sushi"
             >
         </fieldset>
-        <fieldset>
+        <fieldset id="color">
             <legend>What's your favorite color?</legend>
             <label for="red">Red</label>
             <input 
@@ -59,7 +60,7 @@
                 value="blue"
             >
         </fieldset>
-        <fieldset>
+        <fieldset id="band">
             <legend>What's your favorite band?</legend>
             <label for="led-zep">Led Zepplin</label>
             <input 
@@ -83,7 +84,7 @@
                 value="the-beatles"
             >
         </fieldset>
-        <fieldset>
+        <fieldset id="janken">
             <legend>Quick! Rock, Paper, Scissors!</legend>
             <label for="scissors">Scissors</label>
             <input 
@@ -107,6 +108,8 @@
                 value="rock"
             >
         </fieldset>
+        <button id="submit">Submit!</button>
     </form>
+    <script type="module" src="src/quiz/quiz.js"></script>
 </body>
 </html>

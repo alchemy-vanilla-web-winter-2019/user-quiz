@@ -11,5 +11,6 @@ function rateScorecard(scorecard) {
     if(squirtle > charmander && squirtle > bulbasaur) {
         return 'Squirtle';
     }
+    return 'Pikachu';
 }
 export default rateScorecard;

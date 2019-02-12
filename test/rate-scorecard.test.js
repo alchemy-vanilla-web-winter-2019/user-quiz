@@ -23,4 +23,17 @@ test('if squirtle has a greater scorecard value than charmander and bulbasaur re
     const expected = 'Squirtle';
     assert.equal(result, expected);
 });
+test('if charmander and squirtle have even scorecard matchings, return pikachu', function(assert){
+    const scorecard = { charmander: 2, squirtle: 2, bulbasaur: 0 };
+    const result = rateScorecard(scorecard);
+    const expected = 'Pikachu';
 
+    assert.equal(result, expected);
+});
+test('if bulbasaur and charmander have even scorecard matchings, return pikachu', function(assert){
+    const scorecard = { charmander: 1, squirtle: 0, bulbasaur: 1 };
+    const result = rateScorecard(scorecard);
+    const expected = 'Pikachu';
+
+    assert.equal(result, expected);
+});

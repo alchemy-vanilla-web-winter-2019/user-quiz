@@ -7,9 +7,6 @@ QUnit.testStart(function() {
     scorecard = { charmander: 0, bulbasaur: 0, squirtle: 0 };
 });
 
-
-
-
 test('test that scorecard reads Charmander 1, Bulbasaur 0, squirtle 0, when "red" is inputted as color', function(assert) {
     const color = 'red';
     const result = colorScore(color, scorecard);
