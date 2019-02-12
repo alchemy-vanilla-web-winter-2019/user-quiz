@@ -9,5 +9,5 @@ function scoreFavorite(answer, scorecard) {
         scorecard.grass += 1;
     } 
 }
-
 export default scoreFavorite;
+

@@ -1,4 +1,5 @@
 const quizForm = document.getElementById('quiz-form');
+import scoreFavorite from '../calculate-results/favorite/score-favorite.js';
 
 quizForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -8,11 +9,18 @@ quizForm.addEventListener('submit', function(event) {
         favorite: formData.get('favorite') 
     };
 
-    console.log(answers);
-    
-    // const json = JSON.stringify(answers);
-    // window.localStorage.setItem('responses', json);
+    const scorecard = {
+        ocean: 0,
+        sun: 0,
+        grass: 0
+    };
 
-    //window.location = 'results.html';
+    scoreFavorite(answers.favorite, scorecard);
+    const stringed = JSON.stringify(scorecard);
+    window.localStorage.setItem('scorecard', stringed);
+    
+    console.log(answers);
+
+    window.location = 'results.html';
 
 });
