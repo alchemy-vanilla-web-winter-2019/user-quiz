@@ -7,6 +7,7 @@ quizNode.addEventListener('submit', function(event) {
     const answers = {
         word: formData.get('word'),
         color: formData.get('color'),
+        money: formData.get('money'),
         animal: formData.get('animal')
     };
     const json = JSON.stringify(answers);
