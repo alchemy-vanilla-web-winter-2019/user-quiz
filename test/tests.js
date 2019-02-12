@@ -6,3 +6,5 @@ import './display-results.test.js';
 import './check-leisure.test.js';
 import './check-vacation.test.js';
 import './check-transportation.test.js';
+import './check-curse.test.js';
+import './check-dessert.test.js';
