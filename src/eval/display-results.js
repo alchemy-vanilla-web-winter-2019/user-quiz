@@ -11,7 +11,6 @@ import checkVacation from './calculate/check-vacation.js';
 
 function displayResults(answers) {
     let scorecard = { apple: 0, banana: 0, blueberry: 0, kiwi: 0 };
-
     checkAnimal(answers.animal, scorecard);
     checkColor(answers.color, scorecard);
     checkCurse(answers.curse, scorecard);
