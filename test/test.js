@@ -1,0 +1,1 @@
+import './flavors/flavors.test.js';
