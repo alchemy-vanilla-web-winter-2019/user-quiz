@@ -14,11 +14,18 @@ form.addEventListener('submit', function() {
 
     const stringified = JSON.stringify(answers);
     window.localStorage.setItem('answers', stringified);
-
     const result = surveyResults(answers);
     console.log(result);
-    const resultURL = 'results.html?result=' + encodeURIComponent(result);
-    console.log(resultURL);
+    
+    const json = JSON.stringify(result);
+    window.localStorage.setItem('finalanswer', json);
+    
+
+
+    // const result = surveyResults(answers);
+    // console.log(result);
+    // const resultURL = 'results.html?result=' + encodeURIComponent(result);
+    // console.log(resultURL);
 
     window.location = '../../results.html';
 

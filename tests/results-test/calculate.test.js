@@ -2,13 +2,6 @@ import finalizeScorecard from '../../src/results/calculate.js';
 const test = QUnit.test;
 QUnit.module('scorecard eval');
 
-let scorecard = null;
-
-QUnit.testStart(function() {
-    scorecard = { bluegrass: 0, pop: 0, hiphop: 0 };
-});
-
-
 test('if bluegrass is highest value, display bluegrass', function(assert){
     const result = finalizeScorecard({ bluegrass: 1, pop: 0, hiphop:0 });
 
