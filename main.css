@@ -1,0 +1,82 @@
+fieldset {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+input {
+    opacity: 0.9;
+}
+
+
+a {
+    background-color: white;
+    text-align: center;
+}
+
+#welcome {
+    background: url(assets/27Club.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;    
+    -o-background-size: cover;     
+    background-size: cover;
+}
+
+#quiz-page {
+    background: url(assets/cake.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;    
+    -o-background-size: cover;     
+    background-size: cover;
+    
+}
+
+.intro,
+.question,
+#name-form {
+    border: solid 1px white;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.quiz-question {
+    border: solid 1px white;
+    background-color: aquamarine;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#result-button{
+    text-align: center;
+}
+
+#result{
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+
