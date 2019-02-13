@@ -9,4 +9,5 @@ function quizResult(answers) {
     return result;
 }
 
+
 export default quizResult;
