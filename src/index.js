@@ -12,5 +12,5 @@ personalInfoForm.addEventListener('submit', function(event) {
     const infoString = JSON.stringify(personalInfo);
     window.localStorage.setItem('personalInfo', infoString);
     
-    window.location = 'quiz.html'
+    window.location = 'quiz.html';
 });
