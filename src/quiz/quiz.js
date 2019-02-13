@@ -2,6 +2,15 @@ import surveyResults from '../results/results.js';
 
 const form = document.getElementById('quiz-form');
 
+//created avatar and prof name
+
+const json = window.localStorage.getItem('userProfile');
+const userProfile = JSON.parse(json);
+const userProfileName = document.getElementById('user-profile-name');
+const userProfileImage = document.getElementById('user-profile-image');
+userProfileName.textContent = userProfile.name;
+userProfileImage.src = './assets/' + userProfile.avatar + '.png';
+ 
 form.addEventListener('submit', function() {
     event.preventDefault();
 
