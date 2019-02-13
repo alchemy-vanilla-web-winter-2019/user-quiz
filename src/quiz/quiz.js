@@ -1,3 +1,5 @@
+
+
 const quizForm = document.getElementById('quiz-form');
 
 const jsonString = window.localStorage.getItem('username-object');
@@ -13,7 +15,7 @@ quizForm.addEventListener('submit', function(event) {
     const answers = {
         food: formData.get('food'),
     };
-    window.location = 'results.html';
+    //-- window.location = 'results.html';
     console.log(answers);
 
 });

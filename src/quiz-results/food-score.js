@@ -1,4 +1,3 @@
-//function for food test goes here
 function foodScore(answer, scorecard) {
     if(answer === 'pizza') {
         scorecard.germanshepard += 1;
