@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Food War</title>
+</head>
+
+<body>
+    <header>
+        <h1>Which anime food war are you?</h1>
+    </header>
+  
+    <main>
+        <form id="food-war-form">
+            <label>
+                Name:<input type="text" id="name" name="name"> 
+            </label>
+            
+            <fieldset>
+                <legend>Pick your avatar</legend>
+                <label>
+                    <input type="radio" id="avatar" name="avatar" value="soma">
+                    <img src="./assets/soma.jpeg">
+                </label>
+                <label>
+                    <input type="radio" id="avatar" name="avatar" value="ikumi">
+                    <img src="./assets/ikumi.jpeg">
+                </label>
+                <label>
+                    <input type="radio" id="avatar" name="avatar" value="akira">
+                    <img src="./assets/akira.jpeg">
+                </label>
+            </fieldset>
+
+            <button id="submit">Take The Test</button>
+        </form>
+    </main>
+
+    <script type="module" src="/src/index.js"></script>
+    
+</body>
+</html>
