@@ -1,6 +1,6 @@
 import determineTopColor from '../../src/determine-top-color/determine-top-color.js';
 
-let test = QUnit.test;
+const test = QUnit.test;
 
 QUnit.module('determine top-scoring color:');
 

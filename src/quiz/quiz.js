@@ -1,11 +1,6 @@
-// import timeScoreCrunch from '../time-score-crunch/time-score-crunch';
+import quizResults from '../results/quiz-results.js';
 
 const quizForm = document.getElementById('quiz-form');
-
-// const morning = document.getElementById('morning');
-// const midDay = document.getElementById('mid-day');
-// const evening = document.getElementById('evening');
-// const midnight = document.getElementById('midnight');
 
 quizForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -16,12 +11,8 @@ quizForm.addEventListener('submit', function(event) {
         time: formData.get('time')
     };
     
+    const result = quizResults(choices);
     
-    //below not here. timeScoreCrunch is just collecting the data; need to put in local storage
-    // timeScoreCrunch(choices.time, scorecard);
-    console.log('choices', choices);
-    
+    console.log('result', result);
+        
 });
-
-
-//I have the data. I now need to start my first test to evaluate time answer
