@@ -17,7 +17,7 @@ test('increment colors when MORNING is selected', function(assert) {
 
 test('increment colors when MIDDAY is selected', function(assert) {
     timeScoreCrunch('mid-day', scorecard);
-    assert.deepEqual(scorecard, { red: 0, blue: 1, purple: 0, black: 0, yellow: 0.5, green: 1 });
+    assert.deepEqual(scorecard, { red: 0.25, blue: 1, purple: 0.25, black: 0, yellow: 0.5, green: 0.5 });
 }) ;
 
 test('increment colors when EVENING is selected', function(assert) {
