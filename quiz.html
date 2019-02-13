@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+  <title>Quiz Page</title>
+</head>
+<body>
+  <header>
+    <h1>
+      choose the answers that best fit you!
+      <section id="name-and-image">
+        <span id="username-display"></span>
+        <img src="./assets/user-image.png" alt="human outline to represent a user">
+      </section>
+    </h1>
+  </header>
+  <main>
+    <form id="quiz-form">
+      <fieldset>
+        <legend>How Active Are You?</legend>
+        <input type="range" min="0" max="12" id="how-active">
+      </fieldset>
+
+      <fieldset>
+        <legend>Who Do You Want To Hangout With More?</legend>
+
+        <label for="yourself">yourself</label>
+        <input type="radio" name="hangout-with" id="yourself" value="yourself">
+
+        <label for="your-dog">your dog</label>
+        <input type="radio" name="hangout-with" id="your-dog" value="your-dog">
+
+        <label for="your-friends">your friends</label>
+        <input type="radio" name="hangout-with" id='your-friends' value="your-friends">
+      </fieldset>
+
+      <fieldset>
+        <legend>What Is More Important To You, Making An Impact Or Making Money?</legend>
+        <span>(I'll live in a box) 0</span>
+        <input type="range" min="1" max="12" id="impact-or-money">
+        <span>12 (Gimmie allll the monayeee$$)</span>
+      </fieldset>
+      <button>GO!</button>
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+  
+  <script type="module" src="src/quiz.js"></script>
+</body>
+</html>

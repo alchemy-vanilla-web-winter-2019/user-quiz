@@ -1,0 +1,15 @@
+body {
+  font-family: monospace;
+  font-size: 30px;
+  background-color: rgb(213, 215, 216);
+}
+
+#username-form {
+  margin-top: 25%;
+  margin-left: 40%;
+}
+button {
+  display: block;
+  margin: 10px;
+  width: 350px;
+}
