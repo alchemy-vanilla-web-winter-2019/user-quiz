@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/quiz/quiz.css">
+    <title>The Quiz Itself</title>
+</head>
+<body>
+    <header>
+        <h1>Time to Take the Quiz!</h1>
+    </header>
+    <main>
+        <section>
+            <form id="quiz-form">
+                <fieldset>
+                    <legend>Which is your favorite time of day?</legend>
+                    
+                    <label>
+                        <input type="radio" name="time" value="morning">
+                        Morning
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="time" value="mid-day">
+                        Mid-Day
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="time" value="evening">
+                        Evening
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="time" value="midnight">
+                        The Dead of Night
+                    </label>
+                </fieldset>
+                <button>Color Me!</button>
+            </form>
+        </section>
+        <div id="result-box"></div>
+    </main>
+    <script type="module" src="./src/quiz/quiz.js"></script>
+</body>
+</html>
