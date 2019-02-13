@@ -4,7 +4,6 @@ import calculateDreamJob from './calc-dreamjob.js';
 const quizForm = document.getElementById('quiz-form');
 const howActive = document.getElementById('how-active');
 const impactOrMoney = document.getElementById('impact-or-money');
-const displayResults = document.getElementById('display-results');
 
 
 quizForm.addEventListener('submit', function(event) {
@@ -25,10 +24,8 @@ quizForm.addEventListener('submit', function(event) {
 
     calculateHowActive(quizAnswers.active, usersScores); //now usersScores has updated scores
     const dreamJobResults = calculateDreamJob(usersScores);
-    displayResults.textContent = dreamJobResults;
 
-
+    window.localStorage.setItem('dream-job', dreamJobResults);
+    window.location = 'results.html'; //doesnt need file path
     
-
-    //window.location = new page
 });
