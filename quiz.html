@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Take the Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>What is your favorite genre of music</h1>
+        <img src="" id="user-profile-image" alt="Profile Image">
+        <span id="user-profile-name"></span>
+    </header>
+
+    <main>
+        <form id="quiz-form"> 
+        <fieldset>
+            <legend>Choose a song!</legend>
+
+            <input type="radio" id="bluegrass-song" name="song" value="bluegrass"> "Little Maggie"
+            <label for="bluegrass-song"></label>
+
+            <input type="radio" id="pop-song" name="song" value="pop"> "Backstreet's Back"
+            <label for="pop-song"></label>
+
+            <input type="radio" id="hiphop-song" name="song" value="hiphop"> "Gangster's Paradise"
+            <label for="hiphop-song"></label>
+        </fieldset>
+            
+        <fieldset>
+            <legend>Choose an artist!</legend>
+
+            <input type="radio" id="bluegrass-artist" name="artist" value="bluegrass">Bela Fleck
+            <label for="bluegrass-song"></label>
+
+            <input type="radio" id="pop-artist" name="artist" value="pop">Brittany Spears
+            <label for="pop-song"></label>
+
+            <input type="radio" id="hiphop-artist" name="artist" value="hiphop">Tupac
+            <label for="hiphop-song"></label>
+        </fieldset>
+            
+            <button id="quiz-submit">Submit</button> 
+        </form>
+
+    </main>
+<script type="module" src="./src/quiz/quiz.js"></script>
+</body>
+</html>
