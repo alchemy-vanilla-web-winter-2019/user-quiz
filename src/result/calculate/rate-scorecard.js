@@ -17,7 +17,7 @@ function rateScorecard(scorecard) {
         return 'Hufflepuff';
     }
     else {
-        return 'Muggle';
+        return 'Gryffindor';
     }
 }
 

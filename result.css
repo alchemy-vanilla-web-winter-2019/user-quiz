@@ -1,5 +1,5 @@
 img {
-    width: 200px;
+    width: 210px;
 }
 
 h1 {
@@ -10,9 +10,17 @@ h1 {
 
 body {
     font-family: 'Linden Hill', serif;
-    font-size: 20px;
+    font-size: 30px;
+    color: white;
 }
 
 footer {
     font-size: 12px
 }
+
+html { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
