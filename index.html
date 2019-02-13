@@ -7,30 +7,35 @@
 </head>
 <body>
     <header>
-        <h1>Sign In</h1>
+        <h1>Find our what kind of Dungeon Master you are.</h1>
     </header>
     <main>
         <section>
+            <h2>Enter your name and pick a color to take the quiz:</h2>
             <form id="user-form">
                 <label>
                     Name:
                     <input type="text" name="user-name" required>
                 </label>
-                <label>
-                    <p>
-                        Favorite Color:
-                    </p>
-                    <p>
+                <fieldset>
+                    <legend>Pick a color:</legend>
+                    <label>
                         <input type="radio" name="color" value="blue" required>
                         Blue
+                    </label>
+                    <label>
                         <input type="radio" name="color" value="red">
                         Red
+                    </label>
+                    <label>
                         <input type="radio" name="color" value="green">
                         Green
-                        <input type="radio" name="color" value="yellow">
-                        Yellow
-                    </p>
-                </label>
+                    </label>
+                    <label>
+                            <input type="radio" name="color" value="yellow">
+                            Yellow
+                    </label>                
+                </fieldset>
                 <button>Start Quiz</button>
             </form>
         </section>

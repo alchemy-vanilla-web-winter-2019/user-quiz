@@ -6,7 +6,7 @@ function evaluateScorecard(scorecard) {
     if(colville >= mercer && colville >= perkins) {
         return 'Matt Colville';
     }
-    if(mercer > perkins) {
+    if(mercer >= perkins) {
         return 'Matt Mercer';
     }
     

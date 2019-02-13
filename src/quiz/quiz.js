@@ -12,14 +12,17 @@ quizForm.addEventListener('submit', function(event) {
     const quizFormData = new FormData(quizForm);
 
     const answers = {
-        players: quizFormData.get('players')
+        players: quizFormData.get('players'),
+        movie: quizFormData.get('movie')
     };
 
+    
     const quizResult = evaluateQuiz(answers);
     
+    userProfile.result = quizResult;
 
-    const quizResultString = JSON.stringify(quizResult);
-    window.localStorage.setItem('quizResult', quizResultString);
+    const userProfileString = JSON.stringify(userProfile);
+    window.localStorage.setItem('userProfile', userProfileString);
 
-    window.location = './result.html';
+    // window.location = './result.html';
 });
