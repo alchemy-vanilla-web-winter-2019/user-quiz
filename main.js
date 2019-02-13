@@ -13,5 +13,4 @@ form.addEventListener('submit', function(event) {
     const json = JSON.stringify(userProfile);
     window.localStorage.setItem('userProfile', json);
     window.location = './quiz.html';
-
 });

@@ -10,7 +10,6 @@ function surveyResults(answers) {
     };
     scoreSong(answers.song, scorecard);
     scoreArtist(answers.artist, scorecard);
-    console.log(scorecard);
     return finalizeScorecard(scorecard);
 
 }

@@ -2,8 +2,6 @@ import surveyResults from '../results/results.js';
 
 const form = document.getElementById('quiz-form');
 
-//created avatar and prof name
-
 const json = window.localStorage.getItem('userProfile');
 const userProfile = JSON.parse(json);
 const userProfileName = document.getElementById('user-profile-name');
@@ -24,17 +22,9 @@ form.addEventListener('submit', function() {
     const stringified = JSON.stringify(answers);
     window.localStorage.setItem('answers', stringified);
     const result = surveyResults(answers);
-    console.log(result);
     
     const json = JSON.stringify(result);
     window.localStorage.setItem('finalanswer', json);
-    
-
-
-    // const result = surveyResults(answers);
-    // console.log(result);
-    // const resultURL = 'results.html?result=' + encodeURIComponent(result);
-    // console.log(resultURL);
 
     window.location = '../../results.html';
 
