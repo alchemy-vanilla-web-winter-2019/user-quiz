@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz: where should you go on vacation?</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="quiz">
+                <fieldset>
+                    <legend>What is your budget?</legend>
+                    <p>
+                        <label for="expensive">Expensive</label>
+                        <input
+                            type="radio"
+                            id="expensive"
+                            name="budget"
+                            value="expensive"
+                            required
+                        >
+                    </p>
+                    <p>
+                        <label for="cheap">Cheap</label>
+                        <input
+                            type="radio"
+                            id="cheap"
+                            name="budget"
+                            value="cheap"
+                            required
+                        >
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>What kind of environment would you like?</legend>
+                    <p>
+                        <label for="mountains">Mountains</label>
+                        <input
+                            type="radio"
+                            id="mountains"
+                            name="environment"
+                            value="mountains"
+                            required
+                        >
+                    </p>
+                    <p>
+                        <label for="beach">Beach</label>
+                        <input
+                            type="radio"
+                            id="beach"
+                            name="environment"
+                            value="beach"
+                            required
+                        >
+                    </p>
+                    <p>
+                        <label for="city">City</label>
+                        <input
+                            type="radio"
+                            id="city"
+                            name="environment"
+                            value="city"
+                            required
+                        >
+                    </p>
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <script type="module" src="./src/quiz.js"></script>
+</body>
+</html>
