@@ -9,50 +9,38 @@
 </head>
 <body>
     <header>
-        <h1>What color is your chakra?</h1>
+        <h1>What is your favorite genre of music</h1>
     </header>
 
     <main>
         <form id="quiz-form"> 
-            <fieldset>
-                <legend>What flower is your favorite?</legend>
-                <label>
-                    <input type="radio" name="flower" id="rose" value="rose">Rose
-                </label>
-                <label>
-                    <input type="radio" name="flower" id="lilac" value="lilac">Lilac
-                </label>
-                <label>
-                    <input type="radio" name="flower" id="sunflower" value="sunflower">Sunflower
-                </label>
-            </fieldset>
+        <fieldset>
+            <legend>Choose a song!</legend>
 
-            <fieldset>
-                    <legend>What is your favorite fruit?</legend>
-                    <label>
-                        <input type="radio" name="fruit" id="orange" value="orange">Orange
-                    </label>
-                    <label>
-                        <input type="radio" name="fruit" id="avocado" value="avocado">Avocado
-                    </label>
-                    <label>
-                        <input type="radio" name="fruit" id="plum" value="plum">Plum
-                    </label>
-            </fieldset>
+            <input type="radio" id="bluegrass-song" name="song" value="bluegrass"> "Little Maggie"
+            <label for="bluegrass-song"></label>
 
-            <fieldset>
-                    <legend>Which power ranger is your favorite?</legend>
-                    <label>
-                        <input type="radio" name="ranger" id="red-ranger" value="red-ranger">Red Ranger
-                    </label>
-                    <label>
-                        <input type="radio" name="ranger" id="blue-ranger" value="blue-ranger">Blue Ranger
-                    </label>
-                    <label>
-                        <input type="radio" name="ranger" id="yellow-ranger" value="yellow-ranger">Yellow Ranger
-                    </label>
-            </fieldset>
-        
+            <input type="radio" id="pop-song" name="song" value="pop"> "Backstreet's Back"
+            <label for="pop-song"></label>
+
+            <input type="radio" id="hiphop-song" name="song" value="hiphop"> "Gangster's Paradise"
+            <label for="hiphop-song"></label>
+            
+        </fieldset>
+            
+        <fieldset>
+            <legend>Choose an artist!</legend>
+
+            <input type="radio" id="bluegrass-artist" name="artist" value="bluegrass">Bela Fleck
+            <label for="bluegrass-song"></label>
+
+            <input type="radio" id="pop-artist" name="artist" value="pop">Brittany Spears
+            <label for="pop-song"></label>
+
+            <input type="radio" id="hiphop-artist" name="artist" value="hiphop">Tupac
+            <label for="hiphop-song"></label>
+            
+        </fieldset>
             
             <button id="quiz-submit">Submit</button> 
         </form>

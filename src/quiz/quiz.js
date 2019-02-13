@@ -1,21 +1,25 @@
-import scoreFlower from '../questions/score-flower.js';
-const quizForm = document.getElementById('quiz-form');
+import surveyResults from '../results/results.js';
 
+const form = document.getElementById('quiz-form');
 
-quizForm.addEventListener('submit', function(event) {
+form.addEventListener('submit', function() {
     event.preventDefault();
-    
-    const formDaddy = new FormData(quizForm);
-    const answers = {
-        flower: formDaddy.get('flower')
-    };
-    const scorecard = {
-        red: 0,
-        blue: 0,
-        yellow: 0
-    };
-    scoreFlower(answers.flower, scorecard);
 
-    const json = JSON.stringify(scorecard);
-    window.localStorage.setItem('scorecard', json);
+    const formData = new FormData(form);
+
+    const answers = {
+        song: formData.get('song'),
+        artist: formData.get('artist')
+    };
+
+    const stringified = JSON.stringify(answers);
+    window.localStorage.setItem('answers', stringified);
+
+    const result = surveyResults(answers);
+    console.log(result);
+    const resultURL = 'results.html?result=' + encodeURIComponent(result);
+    console.log(resultURL);
+
+    window.location = '../../results.html';
+
 });
