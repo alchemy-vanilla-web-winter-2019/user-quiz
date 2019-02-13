@@ -15,7 +15,7 @@ quizForm.addEventListener('submit', function(event) {
     const answers = {
         players: quizFormData.get('players'),
         movie: quizFormData.get('movie'),
-        kill: quizFormData.get('kill')
+        kill: quizFormData.getAll('kill')
     };
 
     console.log(answers);
