@@ -1,6 +1,14 @@
 //function for food test goes here
 function foodScore(answer, scorecard) {
-    scorecard.pizza += 1;
+    if(answer === 'pizza') {
+        scorecard.germanshepard += 1;
+    }   
+    if(answer === 'cake') {
+        scorecard.pug += 1;
+    }
+    if(answer === 'salad') {
+        scorecard.labradoodle += 1;
+    }   
 }
 
 export default foodScore;

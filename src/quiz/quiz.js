@@ -13,10 +13,7 @@ quizForm.addEventListener('submit', function(event) {
     const answers = {
         food: formData.get('food'),
     };
-
+    window.location = 'results.html';
     console.log(answers);
 
 });
-
-
-
