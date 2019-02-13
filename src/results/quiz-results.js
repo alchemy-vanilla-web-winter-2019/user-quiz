@@ -6,9 +6,7 @@ function quizResults(choices) {
     timeScoreCrunch(choices.time, scorecard);
     const result = determineTopColor(scorecard);
 
-    console.log(result);
     return result;
-    
 }
 
 export default quizResults;
