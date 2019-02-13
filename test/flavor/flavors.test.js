@@ -1,5 +1,5 @@
 QUnit.module('flavors score');
-import scoreFlavorsQuestion from '../../src/results-calculate/score-flavors.js/index.js';
+import scoreFlavorsQuestion from '../../src/results-calculate/score-flavors.js';
 const test = QUnit.test;
 
 

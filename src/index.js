@@ -10,7 +10,6 @@ quizForm.addEventListener('submit', function(event) {
     const answers = {
         flavor: formData.get('flavor')
     };
-    const result = quizResult(answers);
-    console.log(result);
+    quizResult(answers);
 });
 
