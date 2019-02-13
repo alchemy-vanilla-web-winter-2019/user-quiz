@@ -1,6 +1,5 @@
 import sidekickCheck from '../src/result/calculate/sidekick-check.js';
 
-
 const test = QUnit.test;
 QUnit.module('sidekick check');
 let scorecard = null;
