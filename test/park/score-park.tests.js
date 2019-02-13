@@ -4,7 +4,7 @@ const test = QUnit.test;
 
 let scorecard = null;
 QUnit.testStart(function() {
-    scorecard = { leslie: 0, jerry: 0, ben: 0, ann: 0};
+    scorecard = { leslie: 0, jerry: 0, ben: 0, ann: 0 };
 });
 
 test('if user selects waterpark, increment Jerry by 2, Ann by 1', function(assert) {
@@ -24,5 +24,5 @@ test('if user selects national park, incremend leslie by 4, ben by 2', function(
 
 test('if user selects city park, then increment leslie by 2, ben by 3, ann by .5', function(assert) {
     scoreParkQuestion('city-park', scorecard);
-    assert.deepEqual(scorecard, { leslie: 2, jerry: 0, ben: 3, ann: .5});
+    assert.deepEqual(scorecard, { leslie: 2, jerry: 0, ben: 3, ann: .5 });
 });
