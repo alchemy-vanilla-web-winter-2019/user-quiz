@@ -13,6 +13,9 @@
    </header>
 
    <main>
+     <section>
+       Answer to the best of your ability, <span id="name"></span>
+     </section>
      <form id="question-form">
        <fieldset>
          <legend>What loot do you prefer?</legend>
@@ -26,7 +29,18 @@
            Weapon <input type="radio" name="loot" value="weapon">
          </label>
        </fieldset>
-
+       <fieldset>
+        <legend>What is your Mortal Enemy?</legend>
+        <label>
+          Wraith <input type="radio" name="enemy" value="wraith">
+        </label>
+        <label>
+          Vermin Swarm <input type="radio" name="enemy" value="swarm">
+        </label>
+        <label>
+          Human Child <input type="radio" name="enemy" value="child">
+        </label>
+       </fieldset>
 
        <button>Submit</button>
      </form>
