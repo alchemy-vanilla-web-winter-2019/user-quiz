@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+    background-color: #B5D99C;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    width: 100%;
+    background-image: url('/assets//header-background.svg');
+    font-family: 'Libre Baskerville', serif;
+    font-size: 36px;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+fieldset {
+    margin: 15px 5px;
+    border: 1px solid lightgreen;
+    padding: 15px 20px;
+}
+
+legend {
+    color:#EF5D60;
+}
+
+label {
+    padding: 0px 10px; 
+}
+
+button {
+    padding: 15px 25px;
+    background: #EF5D60;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: white;
+}
+
+button:hover {
+    background: lightgreen;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 25px; 
+    background-color: #B5D99C;
+}
