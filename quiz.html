@@ -7,14 +7,14 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Quiz!</title>
 </head>
-<body>
+<body id="quiz-page">
     <header>
-        <h1>take the quiz <span id="name"></span>!</h1>
+        <h1 class="intro">Take the quiz <span id="name"></span>!</h1>
     </header>
     <main>
         <form id="quiz-form">
             <fieldset>
-                <legend>Pick Your Poison</legend>
+                <legend class="quiz-question">Pick Your Poison</legend>
 
                 <label>peyote</label>
                 <input type="radio" name="poison" value="peyote" id="peyote">
@@ -29,7 +29,7 @@
                 <input type="radio" name="poison" value="opiates" id="opiates">
             </fieldset>
             <fieldset>
-                <legend>Your Favorite Accessory Is:</legend>
+                <legend class="quiz-question">Your Favorite Accessory Is:</legend>
 
                 <label>flowers</label>
                 <input type="radio" name="accessory" value="flowers" id="flowers">
@@ -45,7 +45,7 @@
             
             </fieldset>
             <fieldset>
-                <legend>Your Favorite Color Is:</legend>
+                <legend class="quiz-question">Your Favorite Color Is:</legend>
 
                 <label for="black">black</label>
                 <input type="radio" name="color" value="black" id="black">
@@ -59,9 +59,11 @@
                 <label for="tv">a color TV</label>
                 <input type="radio" name="color" value="tv" id="tv">
             </fieldset>
-            <button>Get Your Answer!</button>
+            <div id="result-button">
+                <button>Get Your Answer!</button>
+            </div>
             <fieldset>
-                <legend>You Are:</legend>
+                <legend class="quiz-question">You Are:</legend>
                 <h4 id="result"></h4>
             </fieldset>
         </form>
