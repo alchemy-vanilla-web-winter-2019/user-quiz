@@ -23,12 +23,6 @@ function timeScoreCrunch(choice, scorecard) {
         scorecard.black += 1;
         scorecard.yellow += 0.5;
     }
-
-
-
 }
-
-
-
 
 export default timeScoreCrunch;
