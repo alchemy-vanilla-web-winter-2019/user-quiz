@@ -5,6 +5,12 @@ import scoreSocialism from './questions/score-socialism.js';
 const quizForm = document.getElementById('quiz-form');
 
 // create rendered user name and avatar
+const json = window.localStorage.getItem('profile');
+const userProfile = JSON.parse(json);
+const userProfileName = document.getElementById('user-profile-name');
+const userProfileImage = document.getElementById('user-profile-image');
+userProfileName.textContent = userProfile.name;
+userProfileImage.src = './assets/' + userProfile.avatar + '.png';
 
 quizForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -15,9 +21,6 @@ quizForm.addEventListener('submit', function(event) {
         coffee: formData.get('coffee'),
         socialism: formData.get('socialism')
     };
-
-    
-    
 
     const scorecard = { yes: 0, no: 0, eh: 0 };
 
