@@ -1,28 +1,14 @@
 const test = QUnit.test; //1
-
 //4
+import familyCheck from '..//src/family-check.js';
+
 QUnit.testStart(function() {
      scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
 
 });
 let scorecard = null;//2
 //5
-function familyCheck(inspire, scorecard) {
-    if(inspire === 'oppressive') {
-        scorecard.femaleTrouble += 1;
-        return scorecard;
-    }
-    if(inspire === 'supportive') {
-        scorecard.hairspray += 1;
-        return scorecard;
-    }
-    if(inspire === 'care-not') {
-        scorecard.polyester += 1;
-        return scorecard;
-    }
 
-
-}
 //3
 test('add one to female trouble if oppressive is chosen', function(assert) {
     const expect = { femaleTrouble: 1, polyester: 0, hairspray: 0 };
