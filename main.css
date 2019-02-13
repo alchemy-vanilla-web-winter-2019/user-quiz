@@ -18,9 +18,6 @@ input {
     opacity: 0.9;
 }
 
-label {
-    color: white;
-}
 
 a {
     background-color: white;
@@ -45,7 +42,7 @@ a {
 }
 
 .intro,
-.quiz-question,
+.question,
 #name-form {
     border: solid 1px white;
     background-color: white;
@@ -57,6 +54,19 @@ a {
     margin-bottom: 10px;
     padding: 10px;
     opacity: 0.8;
+    border-radius: 10px;
+}
+
+.quiz-question {
+    border: solid 1px white;
+    background-color: aquamarine;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
