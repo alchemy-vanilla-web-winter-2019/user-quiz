@@ -22,6 +22,8 @@ quizForm.addEventListener('submit', function(event) {
     const json = JSON.stringify(scorecard);
     window.localStorage.setItem('scorecard', json);
 
+    window.location = './result.html';
+
 });
 
 console.log('hello');

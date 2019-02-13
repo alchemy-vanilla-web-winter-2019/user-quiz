@@ -1,6 +1,6 @@
 const test = QUnit.test;
 
-import scoreAllergic from '../../src/questions/score-allergic.js/index.js.js';
+import scoreAllergic from '../../src/questions/score-allergic.js';
 
 // arrange
 let scorecard = null;

@@ -5,7 +5,7 @@ function scoreAllergic(allergic, scorecard) {
     if(allergic === 'no') {
         scorecard.no += 1;
     }
-    if(allergic === 'eh') {
+    if(allergic === 'unsure') {
         scorecard.eh += 1;
     }
 }
