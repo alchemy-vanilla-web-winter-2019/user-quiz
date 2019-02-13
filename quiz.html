@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Page</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz to see what wizarding house you are in:</h1>
+     </header>
+     <main>
+        <h2>Gryffindor, Slytherin, Hufflepuff, Ravenclaw:</h2>
+        <section>
+            <form id="wizard-form">
+                <fieldset>
+                    <legend>Your Patronus Animal and Wand Type</legend>
+                    <label><strong>Patronus:</strong></label>
+                    <label for="doe">Doe</label>
+                    <input type="radio" id="doe" value="doe" name="patronus" required/>
+                    <label for="snake">Snake</label>    
+                    <input type="radio" id="snake" value="snake" name="patronus" required/>
+                    <label for="badger">Badger</label>
+                    <input type="radio" id="badger" value="badger" name="patronus" required/>
+                    <label for="eagle">Eagle</label>
+                    <input type="radio" id="eagle" value="eagle" name="patronus" required/><br>
+                    
+                    <label><strong>Wand Wood Type:</strong></label>
+                    <label for="elder">Elder</label>
+                    <input type="radio" value="elder" name="wand" id="elder" required/>
+                    <label for="holly">Holly</label>
+                    <input type="radio" value="holly" name="wand" id="holly" required/>
+                    <label for="hawthorn">Hawthorn</label>
+                    <input type="radio" value="hawthorn" name="wand" id="hawthorn" required/>
+                </fieldset>
+                <button>Mischief Managed</button>
+            </form>
+        </section>
+     </main>
+    
+     <footer>
+        
+     </footer> 
+     <script type="module" src="./src/quiz/quiz.js"></script>  
+</body>
+</html>
