@@ -1,0 +1,26 @@
+body {
+  font-family: monospace;
+  text-align: center;
+}
+
+fieldset {
+  margin: 30px;
+}
+
+#name-and-image {
+  display: inline-block;
+  position: absolute; 
+  right: 10px;
+  font-size: 20px; 
+}
+
+#username-display {
+  position: absolute;
+  right: 35px;
+}
+
+img {
+  height: 30px;
+}
+
+  /* parent to relative and child to absolute to move child around  */
