@@ -1,0 +1,26 @@
+img {
+    width: 210px;
+}
+
+h1 {
+    font-family: 'Rosarivo', serif;
+    font-size: 45px;
+    color: goldenrod;
+}
+
+body {
+    font-family: 'Linden Hill', serif;
+    font-size: 30px;
+    color: white;
+}
+
+footer {
+    font-size: 12px
+}
+
+html { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

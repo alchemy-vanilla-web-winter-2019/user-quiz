@@ -1,0 +1,30 @@
+footer {
+    font-size: 12px
+}
+
+h1 {
+    font-family: 'Rosarivo', serif;
+    font-size: 45px;
+    color: goldenrod;
+}
+
+h2 {
+    background-color: white;
+    opacity: 0.9;
+}
+
+body {
+    background-image: url("./assets/hogwarts-houses.jpg");
+    font-family: 'Linden Hill', serif;
+    font-size: 20px;
+}
+
+fieldset {
+    background-color: white;
+    opacity: 0.85;
+    border: 2.5px solid black;
+}
+
+legend {
+    font-weight: bold;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Linden+Hill|Rosarivo">
+    <title>Hogwarts House Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Hogwarts House Quiz</h1>
+    </header>
+    <main>
+        <h2>Which house will the Sorting Hat place you in?</h2>
+        <form id="quiz">
+            <p>
+                <fieldset id="word-test">
+                    <legend>Which word best describes you?</legend>
+                    <p>
+                        <label for="loyal">Loyal</label>
+                        <input
+                            type="radio"
+                            name="word"
+                            value="loyal"
+                        >
+                    </p>
+                    <p>
+                        <label for="cunning">Cunning</label>
+                        <input
+                            type="radio"
+                            name="word"
+                            value="cunning"
+                        >
+                    </p>
+                    <p>
+                        <label for="intelligent">Intelligent</label>
+                        <input
+                            type="radio"
+                            name="word"
+                            value="intelligent"
+                        >
+                    </p>
+                    <p>
+                        <label for="determined">Determined</label>
+                        <input
+                            type="radio"
+                            name="word"
+                            value="determined"
+                        >
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset id="color-test">
+                    <legend>Which is color is your favorite out of the four primary colors?</legend>
+                    <p>
+                        <label for="red">Red</label>
+                        <input
+                            type="radio"
+                            name="color"
+                            value="red"
+                        >
+                    </p>
+                    <p>
+                        <label for="green">Green</label>
+                        <input
+                            type="radio"
+                            name="color"
+                            value="green"
+                        >
+                    </p>
+                    <p>
+                        <label for="blue">Blue</label>
+                        <input
+                            type="radio"
+                            name="color"
+                            value="blue"
+                        >
+                    </p>
+                    <p>
+                        <label for="yellow">Yellow</label>
+                        <input
+                            type="radio"
+                            name="color"
+                            value="yellow"
+                        >
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset id="money-test">
+                    <legend>You find $20 on the ground. What do you do?</legend>
+                    <p>
+                        <label for="take">Take it. Finders keepers.</label>
+                        <input
+                            type="radio"
+                            name="money"
+                            value="take"
+                        >
+                    </p>
+                    <p>
+                        <label for="leave">Leave it.</label>
+                        <input
+                            type="radio"
+                            name="money"
+                            value="leave"
+                        >
+                    </p>
+                    <p>
+                        <label for="owner">Try to find the owner of it.</label>
+                        <input
+                            type="radio"
+                            name="money"
+                            value="owner"
+                        >
+                    </p>
+                    <p>
+                        <label for="donate">Donate it.</label>
+                        <input
+                            type="radio"
+                            name="money"
+                            value="donate"
+                        >
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset id="animal-test">
+                    <legend>Which is your favorite animal?</legend>
+                    <p>
+                        <label for="lion">Lion</label>
+                        <input
+                            type="radio"
+                            name="animal"
+                            value="lion"
+                        >
+                    </p>
+                    <p>
+                        <label for="snake">Snake</label>
+                        <input
+                            type="radio"
+                            name="animal"
+                            value="snake"
+                        >
+                    </p>
+                    <p>
+                        <label for="bird">Bird</label>
+                        <input
+                            type="radio"
+                            name="animal"
+                            value="bird"
+                        >
+                    </p>
+                    <p>
+                        <label for="badger">Badger</label>
+                        <input
+                            type="radio"
+                            name="animal"
+                            value="badger"
+                        >
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset id="help-test">
+                    <legend>You're late for something, but you see someone who needs help. What do you do?</legend>
+                    <p>
+                        <label for="stop">Stop to help the person and ensure he or she is fine before you take off.</label>
+                        <input
+                            type="radio"
+                            name="help"
+                            value="stop"
+                        >
+                    </p>
+                    <p>
+                        <label for="quick">Stop to help, but leave quickly because you're already late.</label>
+                        <input
+                            type="radio"
+                            name="help"
+                            value="quick"
+                        >
+                    </p>
+                    <p>
+                        <label for="ignore">Ignore the person.</label>
+                        <input
+                            type="radio"
+                            name="help"
+                            value="ignore"
+                        >
+                    </p>
+                    <p>
+                        <label for="right">Help the person because it's the right thing to do.</label>
+                        <input
+                            type="radio"
+                            name="help"
+                            value="right"
+                        >
+                    </p>
+                </fieldset>
+            </p>
+            <p><button>Submit</button></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Leslie Shea 2019</p>
+    </footer>
+    <script type="module" src="./src/quiz/quiz.js"></script>
+</body>
+</html>
