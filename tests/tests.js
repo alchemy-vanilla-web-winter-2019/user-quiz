@@ -1,0 +1,1 @@
+import './questions-tests/score-allergic.tests.js';

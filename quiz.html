@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOW YOU GET BEES?</title>
-    <link rel="stylesheet" type="text/css" href="'style'.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
@@ -12,6 +12,48 @@
         <h2>Answer the questions below to find out!</h2>
     </header>
 
-    
+    <main>
+
+        <form id="quiz-form">
+
+            <p>Are you allergic to bees?</p>
+            <label>
+                <input type="radio" name="allergic" id="yes" value="yes">Extremely
+            </label>
+            <label>
+                <input type="radio" name="allergic" id="no" value="no">No
+            </label>
+            <label>
+                <input type="radio" name="allergic" id="eh" value="eh">Never been stung, who knows!
+            </label>
+
+            <p>How do you prefer your coffee?</p>
+            <label>
+                <input type="radio" name="coffee" id="sweet" value="sweet">Nice and sweet
+            </label>
+            <label>
+                <input type="radio" name="coffee" id="black" value="black">Black
+            </label>
+            <label>
+                <input type="radio" name="coffee" id="milk" value="milk">A splash of almond milk
+            </label>
+
+            <p>Is socialism key to an egalitarian society?</p>
+            <label>
+                <input type="radio" name="coffee" id="socialism" value="socialism">The workers must sieze control of production.
+            </label>
+            <label>
+                <input type="radio" name="coffee" id="monarchy" value="monarchy">God save the Queen!
+            </label>
+            <label>
+                <input type="radio" name="coffee" id="capitalism" value="capitalism">Innovation and forward thinking will not thrive without the finanical incentives of a capitalistic society.
+            </label>
+
+            <button id="submit-quiz">Find out your results</button>
+        </form>
+        
+    </main>
+
+    <script type="module" src="./src/quiz.js"></script>
 </body>
 </html>
