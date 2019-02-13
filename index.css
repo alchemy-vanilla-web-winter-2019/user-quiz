@@ -1,0 +1,31 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(239, 170, 196, 1);
+}
+
+header {
+    font-family: 'Condiment', cursive;
+    font-size: 40px;
+}
+
+.new {
+    font-size: 25px;
+}
+
+#season {
+    background-color: rgba(185, 192, 218, 1);
+}
+
+#description {
+    background-color: rgba(205, 237, 253, 1);
+}
+
+#friday {
+    background-color: rgba(254, 246, 201, 1);
+}
+button {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: rgba(205, 237, 253, 1);
+}

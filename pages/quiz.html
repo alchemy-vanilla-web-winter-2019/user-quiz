@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Condiment|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Take the Golden Girls Quiz!</h1>
+    </header>
+    <form id="quiz">
+        <fieldset id="season">
+            <legend class="new">Which season are you?</legend>
+                <label for="spring">Spring</label>
+                <input  
+                    type="radio"
+                    name="season"
+                    id="spring"
+                    value="spring"
+                >
+                <label for="summer">Summer</label>
+                <input  
+                    type="radio"
+                    name="season"
+                    id="summer"
+                    value="summer"
+                >
+                <label for="autumn">Autumn</label>
+                <input  
+                    type="radio"
+                    name="season"
+                    id="autumn"
+                    value="autumn"
+                >
+                <label for="winter">Winter</label>
+                <input  
+                    type="radio"
+                    name="season"
+                    id="winter"
+                    value="winter"
+                >
+        </fieldset>
+        <fieldset id="descriptor">
+            <legend class="new">Which one are you in your circle of friends?</legend>
+            <label for="old">The old & sassy one</label>
+                <input  
+                    type="radio"
+                    name="descriptor"
+                    id="old"
+                    value="old"
+                >
+            <label for="masculine">The masculine one</label>
+                <input  
+                    type="radio"
+                    name="descriptor"
+                    id="masculine"
+                    value="masculine"
+                >
+            <label for="sexy">The sexy one</label>
+                <input  
+                    type="radio"
+                    name="descriptor"
+                    id="sexy"
+                    value="sexy"
+                >
+            <label for="dumb">The dumb one</label>
+                <input  
+                    type="radio"
+                    name="descriptor"
+                    id="dumb"
+                    value="dumb"
+                >
+        </fieldset>
+        <fieldset id="friday">
+            <legend class="new">What is your ideal Friday night activity?</legend>
+            <p>
+                <label for="lasagna">Making & eating my famous lasagna</label>
+                <input
+                    type="radio"
+                    name="friday"
+                    id="lasagna"
+                    value="lasagna"
+                >
+            </p>
+            <p>
+                <label for="lanai">Lounging and chatting on the lanai with the girls</label>
+                <input
+                    type="radio"
+                    name="friday"
+                    id="lanai"
+                    value="lanai"
+                >
+            </p>
+            <p>
+                <label for="date">Going on a date with a new guy</label>
+                <input
+                    type="radio"
+                    name="friday"
+                    id="date"
+                    value="date"
+                >
+            </p>
+            <p>
+                <label for="cheesecake">Eating cheesecake at the kitchen table</label>
+                <input
+                    type="radio"
+                    name="friday"
+                    id="cheesecake"
+                    value="cheesecake"
+                >
+            </p>
+        </fieldset> 
+       
+        <button>Submit</button>   
+    </form>
+    <script type="module" src="../src/quiz.js"></script>
+</body>
+</html>
