@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/quiz/quiz.css">
+</head>
+<header>
+<h1>Which Starter Pokemon Are You?</h1>
+</header>
+<body>
+    <form id="poke-quiz">
+        <fieldset id="meal">
+            <legend>What's your favorite meal?</legend>
+            <label for="steak">Steak</label>
+            <input 
+                type="radio"
+                name="fav-meal"
+                id="steak"
+                value="steak"
+                checked
+            >
+            <label for="salad">Salad</label>
+            <input 
+                type="radio"
+                name="fav-meal"
+                id="salad"
+                value="salad"
+            >
+            <label for="sushi">Sushi</label>
+            <input 
+                type="radio"
+                name="fav-meal"
+                id="sushi"
+                value="sushi"
+            >
+        </fieldset>
+        <fieldset id="color">
+            <legend>What's your favorite color?</legend>
+            <label for="red">Red</label>
+            <input 
+                type="radio"
+                name="fav-color"
+                id="red"
+                value="red"
+            >
+            <label for="green">Green</label>
+            <input 
+                type="radio"
+                name="fav-color"
+                id="green"
+                value="green"
+                checked
+            >
+            <label for="blue">Blue</label>
+            <input 
+                type="radio"
+                name="fav-color"
+                id="blue"
+                value="blue"
+            >
+        </fieldset>
+        <fieldset id="band">
+            <legend>What's your favorite band?</legend>
+            <label for="led-zep">Led Zepplin</label>
+            <input 
+                type="radio"
+                name="fav-band"
+                id="led-zep"
+                value="led-zep"
+            >
+            <label for="the-stones">The Rolling Stones</label>
+            <input 
+                type="radio"
+                name="fav-band"
+                id="the-stones"
+                value="the-stones"
+            >
+            <label for="the-beatles">The Beatles</label>
+            <input 
+                type="radio"
+                name="fav-band"
+                id="the-beatles"
+                value="the-beatles"
+                checked
+            >
+        </fieldset>
+        <fieldset id="janken">
+            <legend>Quick! Rock, Paper, Scissors!</legend>
+            <label for="scissors">Scissors</label>
+            <input 
+                type="radio"
+                name="janken"
+                id="scissors"
+                value="scissors"
+                checked
+            >
+            <label for="paper">Paper</label>
+            <input 
+                type="radio"
+                name="janken"
+                id="paper"
+                value="paper"
+            >
+            <label for="rock">Rock</label>
+            <input 
+                type="radio"
+                name="janken"
+                id="rock"
+                value="rock"
+            >
+        </fieldset>
+        <button id="submit">Submit!</button>
+    </form>
+    <script type="module" src="src/quiz/quiz.js"></script>
+</body>
+</html>
