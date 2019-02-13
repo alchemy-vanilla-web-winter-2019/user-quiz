@@ -4,6 +4,7 @@ const userProfile = JSON.parse(window.localStorage.getItem('userProfile'));
 
 const userNameDisplay = document.getElementById('user-name-display');
 userNameDisplay.textContent = userProfile.name;
+userNameDisplay.classList.add(userProfile.color);
 
 const quizForm = document.getElementById('quiz-form');
 quizForm.addEventListener('submit', function(event) {
@@ -24,5 +25,5 @@ quizForm.addEventListener('submit', function(event) {
     const userProfileString = JSON.stringify(userProfile);
     window.localStorage.setItem('userProfile', userProfileString);
 
-    // window.location = './result.html';
+    window.location = './result.html';
 });
