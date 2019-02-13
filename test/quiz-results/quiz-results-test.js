@@ -1,4 +1,4 @@
-import quizResult from '../../src/results-calculate/quiz.results.js';
+import quizResult from '../../src/results-calculate/quiz-results.js/index.js';
 
 
 QUnit.module('quiz results');

@@ -1,5 +1,5 @@
-import scoreFlavorsQuestion from '../results-calculate/score.flavors.js';
-import evaluateScorecard from '../results-calculate/scorecard.js';
+import scoreFlavorsQuestion from './score-flavors.js';
+import evaluateScorecard from './scorecard.js';
 
 function quizResult(answers) {
     const scorecard = { iceCream: 0, brownie: 0, sorbet: 0, tiramisu: 0 };

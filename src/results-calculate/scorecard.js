@@ -19,7 +19,7 @@ function evaluateScorecard(scorecard) {
         && scorecard.tiramisu > scorecard.sorbet) {
         return 'tiramisu';
     }
-    else return 'Kale';
+    else 'Kale';
 }
 
 export default evaluateScorecard;

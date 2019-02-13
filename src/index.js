@@ -1,8 +1,8 @@
-import quizResult from './results-calculate/quiz.results.js';
+import quizResult from './results-calculate/quiz-results.js';
 
 const quizForm = document.getElementById('quiz'); 
 
-quizForm.addEventListener('submit', function(event){ 
+quizForm.addEventListener('submit', function(event) { 
     event.preventDefault();
    
     const formData = new FormData(quizForm);
@@ -13,3 +13,4 @@ quizForm.addEventListener('submit', function(event){
     const result = quizResult(answers);
     console.log(result);
 });
+
