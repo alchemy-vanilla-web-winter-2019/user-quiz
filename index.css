@@ -5,7 +5,7 @@
 
 body {
     background-color: #71B48D;
-    color: #251F47;
+    color: #404E7C;
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
@@ -18,30 +18,29 @@ header {
     padding-bottom: 5px;
 }
 
+h2 {
+    margin: 10px;
+    color: #251F47;
+}
+
 fieldset {
+    color: #404E7C;
     border: 2px solid #404E7C;
     margin: 5px 10px 10px 10px;
 }
 
 legend {
+    border: 2px solid #404E7C;
     color: #251F47;
 }
 
-p {
-    margin: 5px;
-}
-
 label {
-    vertical-align: text-top;
-}
-
-img {
-    display: block;
+    margin: 0 5px 0 5px;
 }
 
 button {
     display:inline-block;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
     box-sizing: border-box;
@@ -49,7 +48,7 @@ button {
     font-weight: 300;
     text-align: center;
     transition: all 0.5s;
-    margin: 10px;
+    margin-left: 10px;
 }
 
 button:hover {
@@ -73,7 +72,7 @@ button:hover {
     color: #F17105;
 }
 
-#user-name-display {
-    text-align: right;
-    padding: 0 10px 0 0;
+#name-input-section {
+    color: #251F47;
+    margin: 10px;
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <title>Welcome</title>
 </head>
 <body>
@@ -13,27 +14,29 @@
         <section>
             <h2>Enter your name and pick a color to take the quiz:</h2>
             <form id="user-form">
-                <label>
-                    Name:
-                    <input type="text" name="user-name" required>
-                </label>
+                <section id="name-input-section">
+                    <label>
+                        Name:
+                        <input type="text" name="user-name" required>
+                    </label>
+                </section>
                 <fieldset>
                     <legend>Pick a color:</legend>
-                    <label>
+                    <label class="blue">
                         <input type="radio" name="color" value="blue" required>
                         Blue
                     </label>
-                    <label>
+                    <label class="red">
                         <input type="radio" name="color" value="red">
                         Red
                     </label>
-                    <label>
+                    <label class="green">
                         <input type="radio" name="color" value="green">
                         Green
                     </label>
-                    <label>
-                            <input type="radio" name="color" value="yellow">
-                            Yellow
+                    <label class="orange">
+                            <input type="radio" name="color" value="orange">
+                            Orange
                     </label>                
                 </fieldset>
                 <button>Start Quiz</button>
