@@ -1,14 +1,13 @@
 import surveyResults from '../results/results.js';
 
 const form = document.getElementById('quiz-form');
-
 const json = window.localStorage.getItem('userProfile');
 const userProfile = JSON.parse(json);
 const userProfileName = document.getElementById('user-profile-name');
 const userProfileImage = document.getElementById('user-profile-image');
 userProfileName.textContent = userProfile.name;
 userProfileImage.src = './assets/' + userProfile.avatar + '.png';
- 
+
 form.addEventListener('submit', function() {
     event.preventDefault();
 
@@ -27,5 +26,4 @@ form.addEventListener('submit', function() {
     window.localStorage.setItem('finalanswer', json);
 
     window.location = '../../results.html';
-
 });

@@ -1,4 +1,5 @@
 import finalizeScorecard from '../../src/results/calculate.js';
+
 const test = QUnit.test;
 QUnit.module('scorecard eval');
 

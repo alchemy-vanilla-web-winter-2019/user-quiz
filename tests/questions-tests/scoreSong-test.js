@@ -1,5 +1,6 @@
-const test = QUnit.test;
 import scoreSong from '../../src/quiz-results/scoreSong.js';
+
+const test = QUnit.test;
 
 QUnit.module('Scoring Song');
 
