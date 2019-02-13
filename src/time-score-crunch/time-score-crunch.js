@@ -6,9 +6,11 @@ function timeScoreCrunch(choice, scorecard) {
         scorecard.green += 0.5;
     }
     if(choice === 'mid-day') {
+        scorecard.red += 0.25;
         scorecard.blue += 1;
+        scorecard.purple += 0.25;
         scorecard.yellow += 0.5;
-        scorecard.green += 1;
+        scorecard.green += 0.5;
     }
     if(choice === 'evening') {
         scorecard.red += 0.5;
