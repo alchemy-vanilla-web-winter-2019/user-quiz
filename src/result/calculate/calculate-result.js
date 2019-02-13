@@ -2,6 +2,7 @@ import wordCheck from './word-check.js';
 import colorCheck from './color-check.js';
 import moneyCheck from './money-check.js';
 import animalCheck from './animal-check.js';
+import helpCheck from './help-check.js';
 import rateScorecard from './rate-scorecard.js';
 
 function calculateResult(answers) {
@@ -10,6 +11,7 @@ function calculateResult(answers) {
     colorCheck(answers.color, scorecard);
     moneyCheck(answers.money, scorecard);
     animalCheck(answers.scorecard);
+    helpCheck(answers.help, scorecard);
     const result = rateScorecard(scorecard);
 
     return result;

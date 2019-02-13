@@ -8,7 +8,8 @@ quizNode.addEventListener('submit', function(event) {
         word: formData.get('word'),
         color: formData.get('color'),
         money: formData.get('money'),
-        animal: formData.get('animal')
+        animal: formData.get('animal'),
+        help: formData.get('help')
     };
     const json = JSON.stringify(answers);
     window.localStorage.setItem('answers', json);

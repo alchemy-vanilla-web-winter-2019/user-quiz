@@ -1,17 +1,17 @@
-function moneyCheck(money, scorecard) {
-    if(money === 'owner') {
+function helpCheck(help, scorecard) {
+    if(help === 'right') {
         scorecard.gryffindor += 1;
     }
-    if(money === 'take') {
+    if(help === 'ignore') {
         scorecard.slytherin += 1;
     }
-    if(money === 'leave') {
+    if(help === 'quick') {
         scorecard.ravenclaw += 1;
     }
-    if(money === 'donate') {
+    if(help === 'stop') {
         scorecard.hufflepuff += 1;
     }
     return scorecard;
 }
 
-export default moneyCheck;
+export default helpCheck;
