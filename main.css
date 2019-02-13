@@ -1,0 +1,33 @@
+fieldset {
+    border-radius: 10px;
+}
+
+button {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#welcome {
+    background: url(assets/27Club.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;    
+    -o-background-size: cover;     
+    background-size: cover;
+}
+
+.intro,
+#name-form {
+    border: solid 1px white;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+

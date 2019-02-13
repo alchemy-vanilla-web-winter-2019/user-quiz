@@ -9,7 +9,6 @@ const jsonString = window.localStorage.getItem('userInfo');
 const userInfo = JSON.parse(jsonString);
 userName.textContent = userInfo.name;
 
-
 const quizForm = document.getElementById('quiz-form');
 
 quizForm.addEventListener('submit', function(event){
@@ -33,11 +32,8 @@ quizForm.addEventListener('submit', function(event){
     scorePoison(answers.poison, scorecard);
     scoreAccessory(answers.accessory, scorecard);
     scoreColor(answers.color, scorecard);
-    console.log(scorecard);
+    
     const finalResult = resultCalculate(scorecard);
 
     result.textContent = finalResult;
-
-    //result.textContent = 
-
 });
