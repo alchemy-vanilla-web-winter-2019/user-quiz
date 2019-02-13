@@ -20,7 +20,7 @@ test('score value for allergic: no', function(assert) {
     assert.deepEqual(scorecard, { yes: 0, no: 1, eh: 0 });
 });
 
-test('score value for allergic: eh', function(assert) {
-    scoreAllergic('eh', scorecard);
+test('score value for allergic: unsure', function(assert) {
+    scoreAllergic('unsure', scorecard);
     assert.deepEqual(scorecard, { yes: 0, no: 0, eh: 1 });
 });
