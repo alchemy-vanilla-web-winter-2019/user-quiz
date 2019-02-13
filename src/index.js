@@ -1,4 +1,4 @@
-import quizResult from './results-calculate/quiz.result.js';
+import quizResult from './results-calculate/quiz-result.js';
 
 const quizForm = document.getElementById('quiz');
 
