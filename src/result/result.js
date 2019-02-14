@@ -10,9 +10,9 @@ resultSpan.textContent = userProfile.result;
 resultSpan.classList.add(userProfile.color);
 
 const dmImagePath = {
-    colville: '../assets/DMs/colville.jpg',
-    mercer: '../assets/DMs/mercer.jpg',
-    perkins: '../assets/DMs/perkins.jpg'
+    colville: 'user-quiz/assets/DMs/colville.jpg',
+    mercer: 'user-quiz/assets/DMs/mercer.jpg',
+    perkins: 'user-quiz/assets/DMs/perkins.jpg'
 };
 
 const dmNames = (userProfile.result).split(' ');
