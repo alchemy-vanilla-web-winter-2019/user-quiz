@@ -14,10 +14,10 @@ quizForm.addEventListener('submit', function(event) {
 
     const answers = {
         players: quizFormData.get('players'),
-        movie: quizFormData.get('movie')
+        movie: quizFormData.get('movie'),
+        kill: quizFormData.getAll('kill')
     };
 
-    
     const quizResult = evaluateQuiz(answers);
     
     userProfile.result = quizResult;
