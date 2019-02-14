@@ -1,13 +1,11 @@
 function scoreFood(food, scorecard) {
     if(food === 'Japanese') {
         scorecard.soma += 1;
-    }
-    if(food === 'Indian') {
-        scorecard.soma += 1;
-        scorecard.akira += 1;
-    }
-    if(food === 'American') {
+        return scorecard;
+    } else if(food === 'American') {
         scorecard.ikumi += 1;
+    } else if(food === 'Indian') {
+        scorecard.akira += 1;
     }
 }
 

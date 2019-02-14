@@ -1,2 +1,2 @@
-import './questions-tests/score-flower.tests.js';
-import './questions-tests/tally.tests.js';
+import './question-tests/score-food.tests.js';
+// import './question-tests/tally.tests.js';
