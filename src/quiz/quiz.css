@@ -1,0 +1,79 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #71B48D;
+    color: #251F47;
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+header {
+    background-color: #260F26;
+    color: #86CB92;
+    text-align: center;
+    border: 5px solid #404E7C;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+fieldset {
+    border: 2px solid #404E7C;
+    margin: 5px 10px 10px 10px;
+}
+
+legend {
+    color: #251F47;
+}
+
+p {
+    margin: 5px;
+}
+
+label {
+    vertical-align: text-top;
+}
+
+img {
+    display: block;
+}
+
+button {
+    display:inline-block;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color:black;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: #F17105;
+}
+
+#user-name-display {
+    text-align: right;
+    padding: 0 10px 0 0;
+}

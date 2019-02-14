@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/quiz/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>What kind of Dungeon Master are You?</h1>
+        <p id="user-name-display"></p>
+    </header>
+    <main>
+        <section>
+            <form id="quiz-form">
+                <fieldset>
+                    <legend>Who are your players?</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="players" value="normal" required>
+                            Normal folks
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="players" value="voice">
+                            Voice actors
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="players" value="employees">
+                            Wizards of the Coast employees
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Which are acceptable wasy to kill PCs?</legend>
+                    <p>Check all that apply:</p>
+                        <label>
+                            <input type="checkbox" name="kill" value="honor">
+                            Honorably
+                        </label>
+                        <label>
+                            <input type="checkbox" name="kill" value="dishonor">
+                            Dishonorably
+                        </label>
+                        <label>
+                            <input type="checkbox" name="kill" value="drama">
+                            For drama
+                        </label>
+                        <label>
+                            <input type="checkbox" name="kill" value="poor">
+                            Because of their own poor decisions
+                        </label>
+                    </fieldset>
+                <fieldset>
+                    <legend>What is your favorite movie?</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="movie" value="star" required>
+                            <i>Star Wars</i> (1977)
+                            <img src="./assets/movie-posters/star.jpg" alt="Star Wars poster">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="movie" value="evil">
+                            <i>Touch of Evil</i> (1958)
+                            <img src="./assets/movie-posters/evil.jpg" alt="Touch of Evil poster">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="movie" value="odyssey">
+                            <i>2001: A Space Odyssey</i> (1968)
+                            <img src="./assets/movie-posters/odyssey.png" alt="2001: A Space Odyssey poster">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="movie" value="labyrinth">
+                            <i>Labyrinth</i> (1986)
+                            <img src="./assets/movie-posters/labyrinth.jpg" alt="Labyrinth poster">
+                        </label>
+                    </p>
+                </fieldset>
+                
+                <button>Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/quiz/quiz.js"></script>
+</body>
+</html>

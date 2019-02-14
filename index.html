@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <header>
+        <h1>Find out what kind of Dungeon Master you are.</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Enter your name and pick a color to take the quiz:</h2>
+            <form id="user-form">
+                <section id="name-input-section">
+                    <label>
+                        Name:
+                        <input type="text" name="user-name" required>
+                    </label>
+                </section>
+                <fieldset>
+                    <legend>Pick a color:</legend>
+                    <label class="blue">
+                        <input type="radio" name="color" value="blue" required>
+                        Blue
+                    </label>
+                    <label class="red">
+                        <input type="radio" name="color" value="red">
+                        Red
+                    </label>
+                    <label class="green">
+                        <input type="radio" name="color" value="green">
+                        Green
+                    </label>
+                    <label class="orange">
+                            <input type="radio" name="color" value="orange">
+                            Orange
+                    </label>                
+                </fieldset>
+                <button>Start Quiz</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
