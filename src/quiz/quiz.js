@@ -18,8 +18,6 @@ quizForm.addEventListener('submit', function(event) {
         kill: quizFormData.getAll('kill')
     };
 
-    console.log(answers);
-
     const quizResult = evaluateQuiz(answers);
     
     userProfile.result = quizResult;
@@ -27,5 +25,5 @@ quizForm.addEventListener('submit', function(event) {
     const userProfileString = JSON.stringify(userProfile);
     window.localStorage.setItem('userProfile', userProfileString);
 
-    // window.location = './result.html';
+    window.location = './result.html';
 });
