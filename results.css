@@ -1,0 +1,16 @@
+#character {
+    text-transform: capitalize;
+}
+
+.info {
+    text-align: right;
+    height: 2.5em;
+    width: 200px;
+    margin-left: auto;
+    padding: 15px;
+    background-color: rgb(184, 216, 245);
+    font-size: 150%;
+    border-radius: 20px 20px;
+    float: right;
+}
+
