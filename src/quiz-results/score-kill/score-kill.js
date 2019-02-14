@@ -45,9 +45,47 @@ function scoreKill(kill, scorecard) {
                             break;
                     }
                     break;
+                case 'dishonor':
+                    switch(kill[1]) {
+                        case 'drama':
+                            scorecard.colville += 0.5;
+                            scorecard.perkins += 1;
+                            break;
+                        case 'poor':
+                            scorecard.colville += 1;
+                            scorecard.perkins += 0.5;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 'drama':                    
+                    scorecard.colville += 1;
+                    scorecard.mercer += 0.5;
+                    scorecard.perkins += 0.5;                           
+                    break;
                 default:
                     break;
             }
+            break;
+        case 3:
+            if(kill[0] === 'honor') {
+                if(kill[1] === 'dishonor') {
+                    scorecard.colville += 1;
+                    scorecard.perkins += 0.5;
+                } else {
+                    scorecard.colville += 1;
+                    scorecard.perkins += 0.5;
+                    scorecard.mercer += 0.5;
+                }
+            } else {
+                scorecard.colville += 0.5;
+                scorecard.perkins += 1;
+            }   
+            break;
+        case 4:
+            scorecard.colville += 0.5;
+            scorecard.perkins += 1;
             break;
         default:
             break;
