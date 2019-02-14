@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>LoL Survey</title>
+</head>
+<body>
+    <header>
+        <h1>What role should you play in League of Legends?</h1>
+    </header>
+
+    <main>
+        
+        <h2><img id="avatar-image"><span id="quiz-taker"></span></h2>
+        <form id="quiz-form">
+
+            <fieldset>
+                <legend>
+                    How do you prefer to do damage?
+                </legend>
+                <label>Up close and personal
+                    <input type="radio" name="range" value="short">
+                </label>
+                <label>From afar
+                    <input type="radio" name="range" value="long">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    What kind of damage do you prefer to do?
+                </legend>
+                <label>Physical
+                    <input type="radio" name="type" value="physical">
+                </label>
+                <label>Magical
+                    <input type="radio" name="type" value="magical">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Do you like to start fights?
+                </legend>
+                <label>Yes
+                    <input type="radio" name="engage" value="yes">
+                </label>
+                <label>No, I prevent them from happening
+                    <input type="radio" name="engage" value="avoid">
+                </label>
+                <label>No, I come later and clean up
+                    <input type="radio" name="engage" value="clean">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    How large of a fight do you prefer?
+                </legend>
+                <label>Large team fights
+                    <input type="radio" name="grouping" value="large">
+                </label>
+                <label>Duels
+                    <input type="radio" name="grouping" value="duels">
+                </label>
+            </fieldset>
+
+            <button>Submit</button>
+        </form>
+    </main>
+    <script type="module" src="./src/quiz.js"></script>
+</body>
+</html>
