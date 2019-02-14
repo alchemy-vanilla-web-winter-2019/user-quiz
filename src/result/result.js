@@ -10,15 +10,9 @@ resultSpan.textContent = userProfile.result;
 resultSpan.classList.add(userProfile.color);
 
 const dmImagePath = {
-<<<<<<< HEAD
     colville: './assets/DMs/colville.jpg',
     mercer: './assets/DMs/mercer.jpg',
     perkins: './assets/DMs/perkins.jpg'
-=======
-    colville: './assets/DMs/colville.jpg',
-    mercer: './assets/DMs/mercer.jpg',
-    perkins: './assets/DMs/perkins.jpg'
->>>>>>> checkBoxQ
 };
 
 const dmNames = (userProfile.result).split(' ');
