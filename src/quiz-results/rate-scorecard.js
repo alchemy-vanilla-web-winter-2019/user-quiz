@@ -1,8 +1,8 @@
-function rateScorecard(banana) {
-    //defines banana as the object.
-    const germanshepard = banana.germanshepard;
-    const pug = banana.pug;
-    const labradoodle = banana.labradoodle; 
+function rateScorecard(scorecard) {
+    //defines scorecard as the object.
+    const germanshepard = scorecard.germanshepard;
+    const pug = scorecard.pug;
+    const labradoodle = scorecard.labradoodle; 
 
     if(germanshepard > pug && germanshepard > labradoodle) {
         return 'German Shepard';
@@ -12,7 +12,7 @@ function rateScorecard(banana) {
     }
     if(labradoodle > pug && germanshepard < labradoodle) {
         return 'Labradoodle';
-    }
+    } console.log('SCORE', rateScorecard);
 }
 
 export default rateScorecard;
