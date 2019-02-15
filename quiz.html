@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Take the Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>What food/equipmet/stle do you like?</h1>
+        <img src="" id="user-food-war-image">
+        <span id="user-food-war-display"></span>
+    </header>
+
+    <main>
+        <form id="quiz-form"> 
+            <fieldset>
+                <legend>What is your favorite cuisine?</legend>
+                <label>
+                    <input type="radio" name="food" id="Japanese" value="Japanese">Japanese
+                </label>
+                <label>
+                    <input type="radio" name="food" id="Indian" value="Indian">Indian
+                </label>
+                <label>
+                    <input type="radio" name="food" id="American" value="American">American
+                </label>
+            </fieldset>
+
+            <fieldset>
+                    <legend>What cooking equipment do you use?</legend>
+                    <label>
+                        <input type="radio" name="equipment" id="Wok" value="Wok">Wok
+                    </label>
+                    <label>
+                        <input type="radio" name="equipment" id="Pot" value="Pot">Pot
+                    </label>
+                    <label>
+                        <input type="radio" name="equipment" id="Strainer" value="Strainer">Strainer
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                    <legend>How do you like your eggs done?</legend>
+                    <label>
+                        <input type="radio" name="eggs" id="Soft Scrambled" value="Soft Scrambled">Soft Scrambled
+                    </label>
+                    <label>
+                        <input type="radio" name="eggs" id="Omelet" value="Omelet">Omelet
+                    </label>
+                    <label>
+                        <input type="radio" name="eggs" id="Poached" value="Poached">Poached
+                    </label>
+            </fieldset>
+        
+            
+            <button id="quiz-submit">Submit</button> 
+        </form>
+
+    </main>
+<script type="module" src="./src/quiz/quiz.js"></script>
+</body>
+</html>
