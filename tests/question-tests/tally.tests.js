@@ -1,29 +1,22 @@
-const test = QUnit.test;
 import tally from '../../src/questions/tally.js';
+const test = QUnit.test;
 
-test('if red is highest: return red', function(assert) {
-    // arrange
-    const scorecard = { red: 1, blue: 0, yellow: 0 };
-    // act
+QUnit.module('tally score');
+
+test('if soma is highest: return soma', function(assert) {
+    const scorecard = { soma: 1, akira: 0, ikumi: 0 };
     const result = tally(scorecard);
-    // assert
-    assert.equal(result, 'red');
+    assert.deepEqual(result, 'soma');
 });
 
-test('if blue is highest: return blue', function(assert) {
-    // arrange
-    const scorecard = { red: 0, blue: 1, yellow: 0 };
-    // act
+test('if akira is highest: return akira', function(assert) {
+    const scorecard = { soma: 0, akira: 1, ikumi: 0 };
     const result = tally(scorecard);
-    // assert
-    assert.equal(result, 'blue');
+    assert.deepEqual(result, 'akira');
 });
 
-test('if yellow is highest: return yellow', function(assert) {
-    // arrange
-    const scorecard = { red: 0, blue: 3, yellow: 3 };
-    // act
+test('if ikumi is highest: return ikumi', function(assert) {
+    const scorecard = { soma: 0, akira: 0, ikumi: 1 };
     const result = tally(scorecard);
-    // assert
-    assert.equal(result, 'yellow');
+    assert.deepEqual(result, 'ikumi');
 });
