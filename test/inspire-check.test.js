@@ -1,14 +1,12 @@
-const test = QUnit.test; //1
+const test = QUnit.test;
 import inspireCheck from '../src/inspire-check.js';
-//4
+
 QUnit.testStart(function() {
      scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
-
 });
-let scorecard = null;//2
-//5
+let scorecard = null;
 
-//3
+
 test('add one to female trouble if fame is chosen', function(assert) {
     const expect = { femaleTrouble: 1, polyester: 0, hairspray: 0 };
     const result = inspireCheck('fame', scorecard);

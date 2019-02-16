@@ -1,15 +1,12 @@
-const test = QUnit.test; //1
-//4
+const test = QUnit.test;
 import familyCheck from '..//src/family-check.js';
 
 QUnit.testStart(function() {
      scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
-
 });
-let scorecard = null;//2
-//5
+let scorecard = null;
 
-//3
+
 test('add one to female trouble if oppressive is chosen', function(assert) {
     const expect = { femaleTrouble: 1, polyester: 0, hairspray: 0 };
     const result = familyCheck('oppressive', scorecard);
