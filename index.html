@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOULD YOU GET BEES?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Should you get bees?</h1>
+        <h2>Find out if you should get some of those "bees" everyone is talking about.</h2>
+    </header>
+    
+    <main>
+        <form id="user-profile">
+            <label>
+                Name <input type="text" id="name" name="name">
+            </label>
+
+            <p>Pick an avatar</p>
+            <label>
+                <input type="radio" id="avatar" name="avatar" value="jt">
+                <img src="./assets/jt.png" alt="Justin Timberlake">
+            </label>
+            <label>
+                <input type="radio" id="avatar" name="avatar" value="yellow">
+                <img src="./assets/yellow.png" alt="The Yellow Ranger">
+            </label>
+            <label>
+                <input type="radio" id="avatar" name="avatar" value="blue">
+                <img src="./assets/blue.png" alt="The Blue Ranger">
+            </label>
+
+            <button id="submit-profile">Take the quiz</button>
+        </form>
+    </main>
+    
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
