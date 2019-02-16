@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Fill out our survey</h1>
+    </header>
+    <main>
+        <section>
+            <span id="user-name">USER</span>
+        </section>
+    </main>
+    <form id="quiz-form">
+        <fieldset>
+            <legend>Lets start with your favorite feelings</legend>
+            <label>
+                <input type="radio" name="favorite" id="melancholic" value="melancholic">Melancholic
+            </label>
+            <label>
+                <input type="radio" name="favorite" id="euphoric" value="euphoric">Euphoric
+            </label>
+            <label>
+                <input type="radio" name="favorite" id="enraged" value="enraged">Enraged
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's your favorite shape</legend>
+            <label>
+                <input type="radio" name="shapes" id="triangles" value="euphoric">Triangles
+            </label>
+            <label>
+                <input type="radio" name="shapes" id="rhombus" value="enraged">Rhombus
+            </label>
+            <label>
+                <input type="radio" name="shapes" id="trapezoid" value="melancholic">Trapezoid
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's your favorite Heath Ledger movie?</legend>
+            <label>
+                <input type="radio" name="heath" id="ten-things" value="euphoric">10 Things I Hate About You
+            </label>
+            <label>
+                <input type="radio" name="heath" id="knights-tale" value="enraged">A Knight's Tale
+            </label>
+            <label>
+                <input type="radio" name="heath" id="no-country" value="melancholic">No Country For Old Men
+            </label>
+        </fieldset>
+        <button id="quiz-submit">SUBMIT</button>
+    </form>
+    <script type="module" src="./src/quiz/quiz.js"></script>
+</body>
+</html>
