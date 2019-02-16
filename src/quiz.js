@@ -2,15 +2,18 @@ import scoreAllergic from './questions/score-allergic.js';
 import scoreCoffee from './questions/score-coffee.js';
 import scoreSocialism from './questions/score-socialism.js';
 
-const quizForm = document.getElementById('quiz-form');
 
 // create rendered user name and avatar
 const json = window.localStorage.getItem('profile');
 const userProfile = JSON.parse(json);
+
 const userProfileName = document.getElementById('user-profile-name');
 const userProfileImage = document.getElementById('user-profile-image');
 userProfileName.textContent = userProfile.name;
 userProfileImage.src = './assets/' + userProfile.avatar + '.png';
+
+
+const quizForm = document.getElementById('quiz-form');
 
 quizForm.addEventListener('submit', function(event) {
     event.preventDefault();
