@@ -2,21 +2,22 @@ function rateScorecard(scorecard) {
     const femaleTrouble = scorecard.femaleTrouble;
     const polyester = scorecard.polyester;
     const hairspray = scorecard.hairspray;
+    
+   
     if(femaleTrouble > polyester && femaleTrouble > hairspray) {
         
-        return 'female trouble';
+        return ' Female Trouble';
     }
 
     if(polyester > femaleTrouble && polyester > hairspray) {
-        return  'polyester';
+        return  ' Polyester';
     }
 
     if(hairspray > femaleTrouble && hairspray > polyester) {
-        return 'hairspray';
+        return ' Hairspray';
     }
 
     
     
 }
-
 export default rateScorecard;

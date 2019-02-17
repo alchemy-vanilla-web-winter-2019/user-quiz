@@ -12,5 +12,4 @@ function familyCheck(family, scorecard) {
         return scorecard;
     }
 }
-
 export default familyCheck;
