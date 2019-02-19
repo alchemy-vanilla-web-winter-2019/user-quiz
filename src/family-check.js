@@ -1,5 +1,5 @@
 function familyCheck(family, scorecard) {
-    if(family === 'oppressive') {
+    if(family === 'care-not') {
         scorecard.femaleTrouble += 1;
         return scorecard;
     }
@@ -7,7 +7,7 @@ function familyCheck(family, scorecard) {
         scorecard.hairspray += 1;
         return scorecard;
     }
-    if(family === 'care-not') {
+    if(family === 'oppressive') {
         scorecard.polyester += 1;
         return scorecard;
     }

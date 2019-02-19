@@ -15,4 +15,4 @@ function inspireCheck(inspire, scorecard) {
 
 }
 
-export  default inspireCheck;
+export default inspireCheck;

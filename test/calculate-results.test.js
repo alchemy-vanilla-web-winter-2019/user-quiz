@@ -1,21 +1,13 @@
 
 const test = QUnit.test;
-
-import wordCheck from '../src/word-score.js';
-import familyCheck from '../src/family-check.js';
-import inspireCheck from '../src/inspire-check.js';
-import rateScorecard from '../src/rate-scorecard.js';
-
-
  
-
 
 
 test('if female trouble has the highest score, return female trouble', function(assert){
     const answers = { self:'rebellious', motivation: 'fame', family: 'care-not'
     }; 
     const expected = 'female trouble';
-    const result = 'female trouble'
+    const result = 'female trouble';
      
     assert.equal(result, expected);
 

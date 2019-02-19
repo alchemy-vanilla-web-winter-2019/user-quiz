@@ -1,16 +1,16 @@
 import wordCheck from '../src/word-score.js';
 
-const test = QUnit.test; //1
+const test = QUnit.test; 
 
-//4
+
 QUnit.testStart(function() {
-     scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
+    scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
 
 });
-let scorecard = null;//2
-//5
+let scorecard = null;
+
  
-//3
+
 test('add one to female trouble if rebellious is chosen', function(assert) {
     const expect = { femaleTrouble: 1, polyester: 0, hairspray: 0 };
     const result = wordCheck('rebellious', scorecard);

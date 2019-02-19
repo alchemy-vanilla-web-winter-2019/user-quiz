@@ -5,7 +5,7 @@ function wordCheck(word, scorecard) {
     if(word === 'activist') {
         scorecard.hairspray += 1;
     }
-    if(word ==='friendly') {
+    if(word === 'friendly') {
         scorecard.polyester += 1;
     }
     return scorecard;

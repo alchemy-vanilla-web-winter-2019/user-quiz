@@ -10,7 +10,7 @@ function rateScorecard(scorecard) {
     }
 
     if(polyester > femaleTrouble && polyester > hairspray) {
-        return  ' Polyester';
+        return ' Polyester';
     }
 
     if(hairspray > femaleTrouble && hairspray > polyester) {

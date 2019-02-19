@@ -2,7 +2,7 @@ const test = QUnit.test;
 import inspireCheck from '../src/inspire-check.js';
 
 QUnit.testStart(function() {
-     scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
+    scorecard = { femaleTrouble: 0, polyester: 0, hairspray: 0 };
 });
 let scorecard = null;
 
