@@ -1,13 +1,13 @@
 
 const test = QUnit.test;
  
-
+import calculateResults from '../src/calculate-result.js';
 
 test('if female trouble has the highest score, return female trouble', function(assert){
     const answers = { self:'rebellious', motivation: 'fame', family: 'care-not'
     }; 
-    const expected = 'female trouble';
-    const result = 'female trouble';
+    const expected = ' Female Trouble';
+    const result = calculateResults(answers);
      
     assert.equal(result, expected);
 
@@ -17,18 +17,18 @@ test('if polyester has the highest score, then return polyester', function(asser
     const answers = {
         word: 'friendly', motivation: 'harmony', family: 'oppressive'
     };
-    const expected = 'polyester';
-    const result = 'polyester';
+    const expected = ' Polyester';
+    const result = calculateResults(answers);
 
-    assert.equal(result, expected)
+    assert.equal(result, expected);
 });
 
 test('if hairspray hae the highest score, return hairspray', function(assert){
     const answers = {
         word: 'activist', motivation: 'dancing', family: 'supportive'
     };
-    const expected = 'hairspray';
-    const result = 'hairspray';
+    const expected = ' Hairspray';
+    const result = calculateResults(answers);
 
     assert.equal(result, expected);
 });

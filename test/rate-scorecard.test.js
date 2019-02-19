@@ -1,6 +1,6 @@
 const test = QUnit.test;
 
-let scorecard = null;
+
 
 import rateScorecard from '../src/rate-scorecard.js';
 
